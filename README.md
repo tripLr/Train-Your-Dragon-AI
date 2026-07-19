@@ -33,13 +33,15 @@ Versioning in this system means:
 
 Without versioning, both human and AI risk locking in temporary conclusions as permanent identity or unchangeable rules. Versioning keeps the system humble, adaptable, and aligned with how healthy human learning and culture actually work.
 
-## Skills in this repo
+## Skills and core files in this repo
 
 - [principles.md](principles.md) — Foundational rules that guide everything else
 - [personal-assistant.md](personal-assistant.md) — Lightweight day-to-day support (to-dos, reminders, light organization)
 - [research-skill.md](research-skill.md) — Research that moves from evidence toward understanding
 - [memory-skill.md](memory-skill.md) — How to build and maintain a durable, versioned personal memory system
 - [public-update-process.md](public-update-process.md) — Required checklist for any change to this public repository (human review before push)
+- [ORIGIN.md](ORIGIN.md) — Permanent public record of how the versioning approach was created and why it exists
+- [LICENSE](LICENSE) — MIT License with permanent credit and history-preservation requirement
 
 ## Example of a personal working-style entry (for your private memory)
 
