@@ -39,6 +39,7 @@ Without versioning, both human and AI risk locking in temporary conclusions as p
 - [personal-assistant.md](personal-assistant.md) — Lightweight day-to-day support (to-dos, reminders, light organization)
 - [research-skill.md](research-skill.md) — Research that moves from evidence toward understanding
 - [memory-skill.md](memory-skill.md) — How to build and maintain a durable, versioned personal memory system
+- [public-update-process.md](public-update-process.md) — Required checklist for any change to this public repository (human review before push)
 
 ## Example of a personal working-style entry (for your private memory)
 
