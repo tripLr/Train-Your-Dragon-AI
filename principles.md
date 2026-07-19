@@ -22,3 +22,7 @@ Every skill and major preference should be reviewed when:
 - It hits a roadblock
 - About 6 months have passed
 - The underlying model meaningfully improves
+
+## 6. Version deliberately
+Treat skills, major preferences, and deep reflections as versions that can be reviewed and reverted.  
+This mirrors how healthy human societies handle beliefs, institutions, and knowledge — nothing is permanently locked when it stops serving truth or usefulness.

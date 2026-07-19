@@ -8,14 +8,30 @@ Most AI conversations start from zero every time. Chat history becomes noisy or 
 
 This project captures a practical alternative that emerged from real use: build durable external systems (clear skills + a well-structured memory file). The AI becomes a consistent thinking partner instead of a forgetful tool.
 
-The practices here emphasize:
-
-- Human ownership
-- Real-time iteration over perfect upfront design
-- Usable progress over sophistication
-- Built-in review so the system stays alive
-
 Private, highly personal, or course-specific skills stay outside this public repo.
+
+## How this collaboration model works
+
+The goal is not a smarter chatbot. The goal is a reliable thinking partner that compounds over time.
+
+Core operating pattern:
+
+1. Prefer durable external systems (skills + a structured memory file) over relying on chat history.
+2. Do not attempt to design the perfect system up front. Use the current version → notice friction → improve the smallest useful piece.
+3. Keep ownership with the human. The AI is a builder and thinking partner; the human decides what matters and what gets kept.
+4. Build deliberate **versioning** and review into the system itself.
+
+### Why versioning matters
+
+Healthy human societies do not treat beliefs, laws, institutions, or personal identities as permanently fixed. They allow revision, debate, and reversion when something becomes rigid, outdated, or harmful. The same principle applies to AI collaboration.
+
+Versioning in this system means:
+
+- Skills and major preferences are treated as living versions, not final truth.
+- When a review trigger is hit (roadblock, approximately 6 months, or meaningful model improvement), the human can examine the current version and, if needed, revert to a previous one or evolve it.
+- Deep self-reflection is stored as dated versions so earlier reasoning remains available and can be questioned later.
+
+Without versioning, both human and AI risk locking in temporary conclusions as permanent identity or unchangeable rules. Versioning keeps the system humble, adaptable, and aligned with how healthy human learning and culture actually work.
 
 ## Skills in this repo
 
