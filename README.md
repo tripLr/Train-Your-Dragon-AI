@@ -41,6 +41,7 @@ Without versioning, both human and AI risk locking in temporary conclusions as p
 - [memory-skill.md](memory-skill.md) — How to build and maintain a durable, versioned personal memory system
 - [public-update-process.md](public-update-process.md) — Required checklist for any change to this public repository (human review before push)
 - [ORIGIN.md](ORIGIN.md) — Permanent public record of how the versioning approach was created and why it exists
+- [FUTURE.md](FUTURE.md) — Open future goals that others are welcome to pick up
 - [LICENSE](LICENSE) — MIT License with permanent credit and history-preservation requirement
 
 ## Private Conversation Archive Pattern
