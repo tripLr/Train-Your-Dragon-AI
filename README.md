@@ -43,6 +43,26 @@ Without versioning, both human and AI risk locking in temporary conclusions as p
 - [ORIGIN.md](ORIGIN.md) — Permanent public record of how the versioning approach was created and why it exists
 - [LICENSE](LICENSE) — MIT License with permanent credit and history-preservation requirement
 
+## Private Conversation Archive Pattern
+
+In addition to a structured memory file, many users benefit from a **private conversation archive** on GitHub.
+
+This is a separate private repository that stores cleaned conversation exports. It gives you an external, durable record that is not dependent on any AI model’s internal memory.
+
+Recommended structure:
+
+```
+my-dragon-memory/          (or any name you choose)
+├── README.md
+├── INDEX.md               # Master index of conversations
+├── conversations/         # Full cleaned exports
+└── subjects/              # Tiny pointer system by topic
+```
+
+This pattern supports a simple skill that can later say “check our conversations” and look up prior durable discussion under your control.
+
+Keep the archive private. Be selective about what you store.
+
 ## Example of a personal working-style entry (for your private memory)
 
 This is the kind of short, dated entry that belongs in *your own* private memory file — never in a public skill:
