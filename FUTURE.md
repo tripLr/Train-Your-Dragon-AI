@@ -35,4 +35,36 @@ Most AI interactions still start from zero or rely on noisy, ephemeral chat hist
 
 ---
 
+## Contributor Bridge: From Personal Dragon to Shared Knowledge
+
+**Status:** Open  
+**Suggested by:** tripLr (2026-07-19)
+
+### Core Idea
+
+While a user is interacting with Grok, if the conversation produces knowledge that meets Grokpedia requirements, the system should be able to:
+
+1. Recognize that the knowledge is candidate material for Grokpedia
+2. Adjust the user’s memory / skill layer so the user becomes a recognized contributor
+3. Feed that high-quality knowledge back into the user’s ongoing Grok interactions
+
+In short: **training my dragon also trains all the dragons**.
+
+This turns individual durable systems (skills + structured memory + private conversation archives) into a distributed contribution path for shared, evidence-based knowledge.
+
+### Why it matters
+
+Currently, personal AI training and public knowledge bases are mostly separate. Closing that loop could create a virtuous cycle:
+
+- Users build better personal systems
+- High-signal knowledge surfaces naturally
+- That knowledge improves the shared encyclopedia
+- The improved shared knowledge then makes every personal Dragon stronger
+
+### Suggested next step
+
+Propose this pattern to Grokpedia / xAI as a working concept, using the public Train Your Dragon repository as a concrete, already-functioning example of the personal side of the loop.
+
+---
+
 *Add new future goals below this line as they emerge.*
