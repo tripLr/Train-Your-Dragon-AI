@@ -2,24 +2,47 @@
 
 Public principles and starter skills for training a personal AI collaborator.
 
+## Core Requirement
+
+**You train your own dragon.**
+
+This is not optional.  
+The human must actively shape the system — deciding what is remembered, what skills exist, what is versioned, and what is discarded.  
+The AI is a builder and thinking partner, not the owner and not the trainer.
+
+If you do not train the dragon, the system collapses back into a generic, forgetful tool.
+
+## The Core Foundation
+
+The **structured memory file** is the core.
+
+Everything else supports it.
+
+A clear, versioned, human-owned memory file is the foundation of the system.  
+Skills, conversation archives, and tools exist to serve and extend that core memory — they do not replace it.
+
+Without a durable memory under your control, there is no compounding intelligence that belongs to you.
+
 ## Why this exists
 
 Most AI conversations start from zero every time. Chat history becomes noisy or disappears.
 
-This project captures a practical alternative that emerged from real use: build durable external systems (clear skills + a well-structured memory file). The AI becomes a consistent thinking partner instead of a forgetful tool.
+This project captures a practical alternative that emerged from real use: the human builds and owns durable external systems, starting with a structured memory file, then adding clear skills and (optionally) a private conversation archive. The AI becomes a consistent thinking partner instead of a forgetful tool.
 
 Private, highly personal, or course-specific skills stay outside this public repo.
 
 ## How this collaboration model works
 
-The goal is not a smarter chatbot. The goal is a reliable thinking partner that compounds over time.
+The goal is not a smarter chatbot. The goal is a reliable thinking partner that compounds over time under human ownership.
 
 Core operating pattern:
 
-1. Prefer durable external systems (skills + a structured memory file) over relying on chat history.
-2. Do not attempt to design the perfect system up front. Use the current version → notice friction → improve the smallest useful piece.
-3. Keep ownership with the human. The AI is a builder and thinking partner; the human decides what matters and what gets kept.
-4. Build deliberate **versioning** and review into the system itself.
+1. You train your own dragon.
+2. The structured memory file is the core foundation.
+3. Prefer durable external systems over relying on chat history.
+4. Do not attempt to design the perfect system up front. Use the current version → notice friction → improve the smallest useful piece.
+5. Keep ownership with the human. The AI is a builder and thinking partner.
+6. Build deliberate **versioning** and review into the system itself.
 
 ### Why versioning matters
 
@@ -35,7 +58,7 @@ Without versioning, both human and AI risk locking in temporary conclusions as p
 
 ## Skills and core files in this repo
 
-- [principles.md](principles.md) — Foundational rules that guide everything else
+- [principles.md](principles.md) — Foundational rules (including “You train your own dragon” and memory as core)
 - [personal-assistant.md](personal-assistant.md) — Lightweight day-to-day support (to-dos, reminders, light organization)
 - [research-skill.md](research-skill.md) — Research that moves from evidence toward understanding
 - [memory-skill.md](memory-skill.md) — How to build and maintain a durable, versioned personal memory system
@@ -46,7 +69,7 @@ Without versioning, both human and AI risk locking in temporary conclusions as p
 
 ## Private Conversation Archive Pattern
 
-In addition to a structured memory file, many users benefit from a **private conversation archive** on GitHub.
+In addition to the core structured memory file, many users benefit from a **private conversation archive** on GitHub.
 
 This is a separate private repository that stores cleaned conversation exports. It gives you an external, durable record that is not dependent on any AI model’s internal memory.
 
