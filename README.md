@@ -2,6 +2,22 @@
 
 Public principles and starter skills for training a personal AI collaborator.
 
+## Current Operational State
+
+This is what is running today:
+
+- Human ownership is the non-negotiable foundation.
+- The **structured memory file** is the core durable system.
+- Skills and private conversation archives serve and extend that core.
+- Deliberate versioning and periodic review are built in.
+- The AI is a builder and thinking partner — the human trains the dragon.
+
+## Repository Structure (Three-Repo Model)
+
+- **Train-Your-Dragon-AI** (this public repo) — Core principles, memory guide, versioning system, public update process, ORIGIN, FUTURE, and minimal foundational examples.
+- **My-Dragon-AI** (your private repo) — Personal memory file + your private skills and tools.
+- **Shared-Dragon-AI** (future public/semi-public repo) — Useful skills that others can adopt.
+
 ## Core Requirement
 
 **You train your own dragon.**
@@ -29,7 +45,7 @@ Most AI conversations start from zero every time. Chat history becomes noisy or 
 
 This project captures a practical alternative that emerged from real use: the human builds and owns durable external systems, starting with a structured memory file, then adding clear skills and (optionally) a private conversation archive. The AI becomes a consistent thinking partner instead of a forgetful tool.
 
-Private, highly personal, or course-specific skills stay outside this public repo.
+Private, highly personal, or course-specific skills stay in your My-Dragon-AI repo.
 
 ## How this collaboration model works
 
@@ -59,8 +75,6 @@ Without versioning, both human and AI risk locking in temporary conclusions as p
 ## Skills and core files in this repo
 
 - [principles.md](principles.md) — Foundational rules (including “You train your own dragon” and memory as core)
-- [personal-assistant.md](personal-assistant.md) — Lightweight day-to-day support (to-dos, reminders, light organization)
-- [research-skill.md](research-skill.md) — Research that moves from evidence toward understanding
 - [memory-skill.md](memory-skill.md) — How to build and maintain a durable, versioned personal memory system
 - [public-update-process.md](public-update-process.md) — Required checklist for any change to this public repository (human review before push)
 - [ORIGIN.md](ORIGIN.md) — Permanent public record of how the versioning approach was created and why it exists
@@ -69,23 +83,7 @@ Without versioning, both human and AI risk locking in temporary conclusions as p
 
 ## Private Conversation Archive Pattern
 
-In addition to the core structured memory file, many users benefit from a **private conversation archive** on GitHub.
-
-This is a separate private repository that stores cleaned conversation exports. It gives you an external, durable record that is not dependent on any AI model’s internal memory.
-
-Recommended structure:
-
-```
-my-dragon-memory/          (or any name you choose)
-├── README.md
-├── INDEX.md               # Master index of conversations
-├── conversations/         # Full cleaned exports
-└── subjects/              # Tiny pointer system by topic
-```
-
-This pattern supports a simple skill that can later say “check our conversations” and look up prior durable discussion under your control.
-
-Keep the archive private. Be selective about what you store.
+See your My-Dragon-AI repository for the full private memory + skills system.
 
 ## Example of a personal working-style entry (for your private memory)
 
