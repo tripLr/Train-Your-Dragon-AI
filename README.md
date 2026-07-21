@@ -16,7 +16,7 @@ This is what is running today:
 
 - **Train-Your-Dragon-AI** (this public repo) — Core principles, memory guide, versioning system, public update process, ORIGIN, FUTURE, and minimal foundational examples.
 - **My-Dragon-AI** (your private repo) — Personal memory file + your private skills and tools.
-- **Shared-Dragon-AI** (future public/semi-public repo) — Useful skills that others can adopt.
+- **Shared-Dragon-AI** and **all-your-base-are-belong-to-us** (future public/semi-public repos) — Useful skills and the portable “All Your Base” concept that others can adopt.
 
 ## Core Requirement
 
