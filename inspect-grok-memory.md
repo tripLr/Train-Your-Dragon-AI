@@ -1,6 +1,6 @@
 ---
 name: inspect-grok-memory
-description: Examine the current running Grok memory, compare with timestamped backups in My-Dragon-AI, offer backup / revert / Baby Dragon, and support section-by-section review and editing so the user keeps full agency. Triggers on inspect grok memory, examine memory, backup memory, revert memory, baby dragon, memory inspector, review memory, or similar.
+description: Examine the current running Grok memory, compare with timestamped backups in My-Dragon-AI, offer backup / revert / Baby Dragon, and support section-by-section review and editing so the user keeps full agency. Always requires backup before any edit or Baby Dragon. Triggers on inspect grok memory, examine memory, backup memory, revert memory, baby dragon, memory inspector, review memory, or similar.
 ---
 
 # Inspect Grok Memory Skill
@@ -15,10 +15,15 @@ Safety, review, and agency skill for the durable memory that Grok uses.
 Give the user full control over the running memory:
 - See what is currently active
 - Review it section by section
-- Edit or remove sections
+- Edit or remove sections (only after backup)
 - Create timestamped backups
 - Revert to a previous version
 - Start fresh (Baby Dragon) without losing core system knowledge
+
+## Core Safety Rule
+
+**Always ask the user to create a backup before any edit or before running Baby Dragon.**  
+No memory changes happen without an explicit backup step first.
 
 ## Main Flow
 
@@ -36,6 +41,7 @@ When the user asks to inspect / examine Grok memory:
    - Go through the memory section by section  
    - User can choose a section to view in full  
    - After viewing, offer: Keep / Edit / Delete / Next section  
+   - **Before any Edit or Delete:** require a backup first  
    - Edits are performed via the normal memory-edit process (user stays in control)
 
    **B. Backup now**  
@@ -48,14 +54,20 @@ When the user asks to inspect / examine Grok memory:
    - User chooses one to restore
 
    **D. Baby Dragon**  
-   - Create a fresh (mostly clean) memory  
+   - **Require backup first**  
+   - Then create a fresh (mostly clean) memory  
    - Must still contain:
      - Knowledge that Train Your Dragon exists  
      - Core skills (especially this inspect-grok-memory skill)  
      - Basic ownership / agency principles  
      - Pointers to the private My-Dragon-AI system  
 
-4. At any time the user can switch between these modes or stop.
+### Baby Dragon Concept
+
+Baby Dragon is a **double-blind tool**.  
+It works like opening a private browser tab with no history — it lets the user see what a clean/stock memory produces *before* deciding to change the real one.  
+
+Use it to preview behavior safely. It is not a destructive reset unless the user later chooses to keep it.
 
 ## Structure Rule
 
