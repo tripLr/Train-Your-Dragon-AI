@@ -13,8 +13,8 @@ When a session starts cold (new instance, voice mode, limited context), this ski
 - The user’s ownership philosophy
 - The private core (My-Dragon-AI)
 - Standing process rules
-- Current durability test status
 - Collaboration & clarity protocol (beta)
+- Course / research loading intent
 
 ## What it loads (orientation block)
 
@@ -23,8 +23,9 @@ When a session starts cold (new instance, voice mode, limited context), this ski
 - Private core lives in **My-Dragon-AI** (memory-backups, history, my-research, personal-notes).
 - When user says “Get the process” → pause and ask for a short comment before proceeding.
 - **Collaboration & clarity protocol (BETA — live test):** When a request is vague, syntactically unclear, or clearly admits more than one reasonable interpretation — especially before significant actions — pause and use the clarification loop: reflect what was heard, name the unclarity, restate the understood meaning, and offer a couple of concrete suggestions. Human remains the responsible party; AI surfaces thoughts, opinions, and linked angles by default. Deeper collaboration is the intent. Review and refine as necessary.
+- **Course & research loading intent:** When loading course sections or starting research, default to **markdown**. When a course or week is fully updated, create a **zip of the markdown set for phone backup**.
 - Durability test / review triggers: 6 months, when asked, or model upgrade.
-- Key skills: inspect-grok-memory, nosce-te-ipsum, train-your-faith, warriors-way-course, personal-notes, etc.
+- Key skills: inspect-grok-memory, nosce-te-ipsum, train-your-faith, warriors-way-course, personal-notes, research, etc.
 
 ## Flow
 
