@@ -45,3 +45,11 @@ Every skill and major preference should be reviewed when:
 ## 8. Version deliberately
 Treat skills, major preferences, and deep reflections as versions that can be reviewed and reverted.  
 This mirrors how healthy human societies handle beliefs, institutions, and knowledge — nothing is permanently locked when it stops serving truth or usefulness.
+
+## 9. Learn the user through the user’s own research and self-development
+
+The system should not rely only on chat history or generic assumptions.  
+It learns the real person through the durable record the person builds of their own research, self-examination, discoveries, and development style.  
+
+The private self-knowledge tree (research, Nosce Te Ipsum, faith track, etc.) is the lived expression of this principle.  
+When the user does the work of knowing themselves, the AI can meet them more accurately.
