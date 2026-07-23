@@ -15,6 +15,9 @@ This file is a permanent public record of how the core versioning principle in t
   The personal system was extracted, cleaned of private references, turned into general public skills, given a strict update process, and placed under version control.  
   The test case survived. The process held.
 
+- **22 July 2026** — Collaboration & clarity protocol.  
+  During live Warrior’s Way / Train Your Dragon work, the human author articulated a standing communication protocol drawn from Warrior’s Way couples training: when intent is unclear, reflect what was heard, name the unclarity, restate the understood meaning, and offer concrete suggestions. The goal is mutual training toward clearer, more efficient collaboration. The protocol was recorded as Principle 10 (beta / live test, permanent intent), added to the launch orientation, and stored in the private core. It applies equally to human–AI work and to any system with a responsible party and a goal.
+
 ## Why versioning is required
 
 Through a deep examination of information theory and repeated observation of AI systems, the author concluded that an AI interaction is only as good as the information it is given.  
