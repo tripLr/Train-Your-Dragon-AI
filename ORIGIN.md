@@ -18,6 +18,9 @@ This file is a permanent public record of how the core versioning principle in t
 - **22 July 2026** — Collaboration & clarity protocol.  
   During live Warrior’s Way / Train Your Dragon work, the human author articulated a standing communication protocol drawn from Warrior’s Way couples training: when intent is unclear, reflect what was heard, name the unclarity, restate the understood meaning, and offer concrete suggestions. The goal is mutual training toward clearer, more efficient collaboration. The protocol was recorded as Principle 10 (beta / live test, permanent intent), added to the launch orientation, and stored in the private core. It applies equally to human–AI work and to any system with a responsible party and a goal.
 
+- **23 July 2026** — Bootloader successful test.  
+  The private BOOTLOAD_Train_Your_Dragon.md (My-Dragon-AI) was used to orient a live session. Process: read the bootload file first, then execute “Launch the dragon.” Authenticated private-repo access worked; public raw URL correctly returned 404. Orientation block loaded cleanly. Durability / cross-instance continuity advanced under live conditions. Successful entry recorded in private history.
+
 ## Why versioning is required
 
 Through a deep examination of information theory and repeated observation of AI systems, the author concluded that an AI interaction is only as good as the information it is given.  
