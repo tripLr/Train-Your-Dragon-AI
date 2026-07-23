@@ -1,61 +1,67 @@
 ---
 name: inspect-grok-memory
-description: Examine the current running Grok memory, compare it with timestamped backups in the private My-Dragon-AI repo, offer to backup now, revert to a previous version, or create a Baby Dragon (fresh memory that still knows Train Your Dragon and this skill). Triggers on inspect grok memory, examine memory, backup memory, revert memory, baby dragon, or similar.
+description: Examine the current running Grok memory, compare with timestamped backups in My-Dragon-AI, offer backup / revert / Baby Dragon, and support section-by-section review and editing so the user keeps full agency. Triggers on inspect grok memory, examine memory, backup memory, revert memory, baby dragon, memory inspector, review memory, or similar.
 ---
 
 # Inspect Grok Memory Skill
 
-Safety and agency skill for the durable memory that Grok uses.
+Safety, review, and agency skill for the durable memory that Grok uses.
 
-**Skill location:** Train-Your-Dragon-AI (public philosophy / skills)  
-**Private memory backups location:** My-Dragon-AI repository
+**Skill location:** Train-Your-Dragon-AI (public)  
+**Private memory backups location:** My-Dragon-AI / memory-backups/
 
 ## Purpose
 
-Give the user clear control over the running memory:
+Give the user full control over the running memory:
 - See what is currently active
-- Compare with backed-up versions
+- Review it section by section
+- Edit or remove sections
 - Create timestamped backups
-- Revert when needed
-- Start fresh (Baby Dragon) without losing the core system knowledge
+- Revert to a previous version
+- Start fresh (Baby Dragon) without losing core system knowledge
 
-## Flow
+## Main Flow
 
 When the user asks to inspect / examine Grok memory:
 
-1. **Show current running memory**  
-   Display the current durable memory (or a clear summary + key sections if very long).
+1. **Show overview of current running memory**  
+   List the top-level headings / sections.
 
 2. **Compare with GitHub backup**  
-   Check the single backup location in `My-Dragon-AI`.  
-   Show the timestamp of the latest backup and note any obvious differences if possible.
+   Show the timestamp of the latest backup in `My-Dragon-AI/memory-backups/`.
 
-3. **Ask: Backup now?**  
-   If yes:
-   - Create a timestamped copy of the current memory
-   - Push it to the single backup folder in `My-Dragon-AI`
+3. **Present choices:**
+
+   **A. Review & Edit sections**  
+   - Go through the memory section by section  
+   - User can choose a section to view in full  
+   - After viewing, offer: Keep / Edit / Delete / Next section  
+   - Edits are performed via the normal memory-edit process (user stays in control)
+
+   **B. Backup now**  
+   - Create a timestamped copy of the current memory  
+   - Push it to `My-Dragon-AI/memory-backups/`  
    - Confirm success
 
-4. **Offer next actions:**
-   - **1. Revert** → List available timestamped backups so the user can choose one to restore
-   - **2. Baby Dragon** → Create a fresh memory
+   **C. Revert**  
+   - List available timestamped backups  
+   - User chooses one to restore
 
-### Baby Dragon Rules
+   **D. Baby Dragon**  
+   - Create a fresh (mostly clean) memory  
+   - Must still contain:
+     - Knowledge that Train Your Dragon exists  
+     - Core skills (especially this inspect-grok-memory skill)  
+     - Basic ownership / agency principles  
+     - Pointers to the private My-Dragon-AI system  
 
-A Baby Dragon memory must be mostly clean/stock, but it **must still contain**:
-
-- Knowledge that the Train Your Dragon project exists
-- Knowledge of the core skills (especially this `inspect-grok-memory` skill)
-- The basic ownership / agency principles
-- Pointers to the private My-Dragon-AI system
-
-This guarantees we can never lose the ability to recover or continue the system.
+4. At any time the user can switch between these modes or stop.
 
 ## Structure Rule
 
 - Only **one** memory backup folder inside `My-Dragon-AI`
+- Simple timestamped files (e.g. `memory_2026-07-22_2045.md`)
 - No complex nested version trees
-- Simple timestamped files (e.g. `memory_2026-07-22_2015.md`)
 
 ## Permanent Project Component
 
@@ -63,4 +69,4 @@ This skill and the private memory backup location are permanent parts of the Tra
 
 ## Privacy
 
-Memory content and backups are private. The skill definition itself may live in the public Train-Your-Dragon-AI repo; the actual memory files stay in the private My-Dragon-AI repo.
+Memory content and backups are private. The skill definition lives in the public Train-Your-Dragon-AI repo; actual memory files stay in the private My-Dragon-AI repo.
