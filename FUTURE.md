@@ -67,4 +67,52 @@ Propose this pattern to Grokpedia / xAI as a working concept, using the public T
 
 ---
 
+## Local-First Voice Layer (Train Your Dragon Future Edition)
+
+**Status:** Open / Concept  
+**Suggested by:** tripLr (2026-07-23)  
+**Related vision:** AI@home / Distributed AI (see nosce-te-ipsum)
+
+### Core Idea
+
+Move voice interaction from cloud-only to a **local-first** stack so that speech, transcripts, and notes stay under the user’s control while still feeding the same Train Your Dragon systems (personal-notes, memory, skills, journaling + research modes).
+
+### Quick Development Plan (Phased)
+
+**Phase 0 – Current Bridge (now)**  
+- Continue using cloud voice mode.  
+- Explicitly capture important voice sessions into durable notes (“summarize this thread” or manual save).  
+- Document the gap (voice content does not auto-write to shared memory or text thread).
+
+**Phase 1 – Local Capture & Storage (first usable slice)**  
+- Local speech-to-text (Whisper.cpp or equivalent) running on the user’s machine.  
+- Simple local web interface (browser-based) to start/stop recording, view live transcript, and save sessions.  
+- All audio + transcripts stored only on local disk (or user-controlled NAS).  
+- Manual or semi-automatic export into the existing personal-notes / My-Dragon-AI structure.
+
+**Phase 2 – Local Conversational Voice**  
+- Add local text-to-speech.  
+- Optional light local LLM (or hybrid: local STT/TTS + cloud reasoning when needed) so basic back-and-forth can stay on-device.  
+- Keep the same “summarize / save / journal / research” commands so the user experience stays consistent with the cloud version.
+
+**Phase 3 – Full Integration & Ownership**  
+- Seamless hand-off between local voice sessions and the rest of the Train Your Dragon stack.  
+- Optional encrypted sync across the user’s own devices.  
+- Align with the broader AI@home vision (local node as a first-class participant rather than pure client).
+
+### Design Principles That Must Survive
+
+- Human remains the owner of the data and the system.  
+- Local-first; cloud is optional enhancement, never the only path.  
+- Same durable systems (notes, memory, skills) regardless of whether the input came from text or local voice.  
+- Start small and usable (web interface + local STT) before chasing full on-device conversation.
+
+### Open Questions
+
+- Preferred local STT/TTS stack and hardware targets (laptop, mini-PC, home server).  
+- How aggressively to hybridize (local voice + cloud reasoning) vs. pure local.  
+- Privacy / threat model for any future optional sync.
+
+---
+
 *Add new future goals below this line as they emerge.*
