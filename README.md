@@ -75,6 +75,7 @@ Without versioning, both human and AI risk locking in temporary conclusions as p
 ## Skills and core files in this repo
 
 - [principles.md](principles.md) — Foundational rules (including “You train your own dragon” and memory as core)
+- [SYSTEM_STRUCTURE.md](SYSTEM_STRUCTURE.md) — Why agency needs organization, how PARA entered the system, personal vs method work, and the current operating pattern
 - [memory-skill.md](memory-skill.md) — How to build and maintain a durable, versioned personal memory system
 - [public-update-process.md](public-update-process.md) — Required checklist for any change to this public repository (human review before push)
 - [ORIGIN.md](ORIGIN.md) — Permanent public record of how the versioning approach was created and why it exists
