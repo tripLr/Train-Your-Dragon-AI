@@ -4,7 +4,7 @@
 
 **Author:** Matt Rogers (tripLr)  
 **Project:** [Train-Your-Dragon-AI](https://github.com/tripLr/Train-Your-Dragon-AI)  
-**Date:** 2026-07-25  
+**Date:** 2026-07-25 (updated same day: decentralized network next step)  
 **Status:** Working paper / live-tested model — for review
 
 ---
@@ -13,7 +13,7 @@
 
 Most AI interaction still resets context, concentrates power in the platform, and treats the human as a temporary user of a system they do not own. Train Your Dragon is a live-tested alternative: the human builds and owns durable external systems (structured memory, skills, process rules) so that existing AI capabilities compound under human direction.
 
-This paper argues that true agency in AI collaboration requires streamlined organization, explicit ownership, and deliberate versioning of the human’s own rules. It distinguishes the approach from digital minimalism and from AI-second-brain productivity systems, and claims that marrying current AI capability with trained personal systems may reduce or remove the practical need to wait for artificial general intelligence (AGI). The next step is not a single general agent, but many trained dragons learning from real human use while remaining under human ownership.
+This paper argues that true agency in AI collaboration requires streamlined organization, explicit ownership, and deliberate versioning of the human’s own rules. It distinguishes the approach from digital minimalism and from AI-second-brain productivity systems, and claims that marrying current AI capability with trained personal systems may reduce or remove the practical need to wait for artificial general intelligence (AGI). The next step is not a single general agent, but a **decentralized network of trained dragons** whose published method decisions can form a weighted, revisable ruleset of human use — while personal data stays private and each human remains owner of their node.
 
 ---
 
@@ -103,7 +103,7 @@ The model is not theoretical. It has been run under live conditions with private
 | 19 July 2026 | Public stress test: personal system cleaned, general skills published, update process required |
 | 22 July 2026 | Collaboration & clarity protocol recorded as standing principle (beta) |
 | 23 July 2026 | Bootloader successful under live conditions |
-| 25 July 2026 | PARA + personal/method split + Dragon-Inbox + system structure docs; explicit agency-first framing for public method |
+| 25 July 2026 | PARA + personal/method split + Dragon-Inbox + system structure docs; explicit agency-first framing; decentralized network next step drafted |
 
 Origin record and permanent credit requirements are part of the repository, not optional documentation.
 
@@ -176,18 +176,73 @@ The author’s position is direct: **we do not need general AI** as the prerequi
 
 ---
 
-## 9. Next Step: Trained Dragons Learning from Human Use
+## 9. Next Step: A Decentralized Network of Trained Dragons
+
+### 9.1 The claim
 
 If many people run ownership-first personal systems:
 
 - Each dragon is shaped by real use, real friction, and real revision.
-- Method improvements that are not private can be published and reused.
+- Method improvements that are deliberately published can be reused.
 - Personal material stays personal; capability patterns can spread.
 - Learning happens from **human usage under agency**, not only from centralized training runs.
 
-The long-term picture is not one general intelligence that replaces personal systems. It is a population of trained dragons, each owned by a human, improving how collaboration works while the human remains responsible for values, memory, and direction.
+A **network** of such dragons does more than share tips. Over time, published method decisions — what was kept, what was reverted, what reduced friction, what failed review — can form a **weighted ruleset of human decisions**. Weight comes from use and survival under versioning, not from a single lab or a single committee.
 
-That is the development direction of Train Your Dragon: integration of existing AI into personal experience under human ownership, with explicit agency, versioning, and a path for method to improve in public without consuming private life.
+That is collective learning from owned personal systems, not a general agent that replaces them.
+
+### 9.2 Design principle: decentralized registry (not a central brain)
+
+Analogy: a **cryptocurrency-style registry** — a shared, append-oriented record of method artifacts and decision signals — not a custodian of private lives and not a single operator of everyone’s AI.
+
+| Layer | What it is | What it is not |
+|-------|------------|----------------|
+| **Personal node** | One human’s Train Your Dragon system (memory, skills, private PARA) | Not visible to the network by default |
+| **Method publish** | Deliberately exported skills, process rules, version outcomes | Not journals, health, faith, family, or raw chat |
+| **Shared rules registry** | Decentralized, encrypted-capable record of published method + optional weight signals | Not a central AI that holds everyone’s context |
+| **Local dragon** | Reads registry by choice; human decides what to adopt | Not auto-ruled by network consensus |
+
+**Train Your Dragon (this project) is intended as a first node:** a working personal system that already separates personal vs method and can, later, publish method-only artifacts into a shared registry.
+
+### 9.3 Hard constraints (or agency is lost)
+
+1. **Personal must not leak** — only method, skills, and decision patterns that were explicitly published.
+2. **Weighting must be revisable** — same versioning discipline; a popular bad rule must not freeze forever.
+3. **No transfer of ownership** — the registry supplies patterns; it does not own any individual’s dragon.
+4. **Human remains the responsible party** — weighted consensus is evidence, not command.
+5. **Decentralization is required** — no single company, model vendor, or repo owner should be the only gate for the ruleset.
+
+### 9.4 What needs to be built
+
+Phased so the first slices stay usable without waiting for a perfect protocol.
+
+**Phase A — Method export (node-ready)**  
+- Standard package format for a *method-only* export from a Train Your Dragon node (skills, process rules, version metadata, review outcomes).  
+- Explicit exclude list: personal memory, private notes, course life content, health, identity detail.  
+- Human review gate before any publish (same spirit as the public-update-process already used in this repo).
+
+**Phase B — Shared rules registry (decentralized)**  
+- A registry of published method packages: content-addressed or signed artifacts, version history, optional adoption/revert signals.  
+- Cryptocurrency-registry analogy: shared record of *what was published and how it was treated*, not a wallet of private data.  
+- Encryption where needed for selective disclosure; public method can stay public; sensitive method variants can stay encrypted to chosen peers.  
+- No single operator required for read; write/publish under key ownership of the human (or their node).
+
+**Phase C — Weighting from use**  
+- Optional signals: adopted, kept after N days, reverted at roadblock, forked, superseded.  
+- Weights derived from those signals, not from platform ranking alone.  
+- Any node can ignore weights; agency stays local.
+
+**Phase D — Node software**  
+- Reference implementation: Train Your Dragon (or compatible) as a node that can (1) run personal system offline/private, (2) publish method packages, (3) pull and evaluate registry entries, (4) never auto-merge into personal memory without human confirmation.
+
+### 9.5 What this is not
+
+- Not a path to one general intelligence that absorbs all dragons.  
+- Not a social network of private journals.  
+- Not “alignment by majority vote” that overrides the individual.  
+- Not dependent on AGI existing first.
+
+It is a path where **trained dragons learn from human usage** through a decentralized, method-only registry, while each human keeps ownership of their node.
 
 ---
 
@@ -197,7 +252,7 @@ Agency in AI interaction is not automatic. It must be designed for: durable exte
 
 Train Your Dragon is a working test of that design. It is related to digital minimalism and to AI-second-brain systems, but its center is different: **who owns the relationship and how the human’s rules survive over time**.
 
-The gap that matters is not only “before AGI.” It is the gap between powerful models and humans who still decide. Filling that gap with ownership-first integration may be enough. The next step is trained dragons learning from human use — without handing the center of agency to a general system that no individual owns.
+The gap that matters is not only “before AGI.” It is the gap between powerful models and humans who still decide. Filling that gap with ownership-first integration may be enough. The next step is a **decentralized network of trained dragons** publishing method-only decisions into a shared, encrypted-capable rules registry — so collective learning from real use is possible without handing the center of agency to a general system that no individual owns.
 
 ---
 
