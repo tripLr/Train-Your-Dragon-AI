@@ -14,6 +14,20 @@ You are invited to join for discussion, updates, and peer conversation around tr
 
 ---
 
+## Support / Donation
+
+This project is free to use, deploy, and run under the [LICENSE](LICENSE).
+
+Development this week included additional costs of about **$60** plus roughly **60 hours** of interaction and training while using and refining the first version.
+
+If you find it useful and want to support continued work:
+
+**PayPal:** [paypal.com/d2shound](https://paypal.com/d2shound)
+
+No pressure. The method stays free and open.
+
+---
+
 ## Why this project exists
 
 No existing tools could give an AI that truly assisted with a deep personal development course while keeping ownership, agency, and discernment with the human.
