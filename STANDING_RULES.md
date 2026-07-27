@@ -14,6 +14,9 @@ These rules contain no personal data. Adopt any, all, or none. They exist to kee
 8. **System layer stays non-personal.** Optional Dev IDs are version + timestamp hashes only — never name, account, or device.
 9. **Living work lives where the human chooses** (PARA / Drive / etc.). Public method; private living data.
 10. **Version and review.** Skills and major preferences are living versions, not fixed identity.
+11. **All future and now updates show where the update is applied.** State the file or location being changed.
+12. **Show where processes and files are updated and created in every instance.**
+13. **Local rules and skills need version checking.** When a local copy of a skill or ruleset is loaded, compare it against the public/system version (from Train-Your-Dragon-AI or Shared-Dragon-AI) and report any differences so the human stays in control of which version is active.
 
 ## Your agency selections begin training your dragon!
 
@@ -30,6 +33,7 @@ Complete these **before** choosing hosting. Optional — add only if you wish.
 - [ ] I may use an optional non-personal Dev ID for version checks only
 - [ ] Formal issues go to the public GitHub repo
 - [ ] I can stop or change any of this later
+- [ ] I want to know where processes and files are updated and created in every instance
 ```
 
 ## Origin note
@@ -39,3 +43,7 @@ These rules grew from the need to learn a personal development course (Warrior�
 Credit for the formative training environment: **Rick Yee / Warrior’s Way Mindset** — [thewarriorswaymindset.com](https://thewarriorswaymindset.com/).
 
 See also: [INSTALL.md](INSTALL.md) for the full new-user order.
+
+## Change log
+
+- **2026-07-26** — Synced with launch-the-dragon skill. Added rules 11–13 (update visibility + local version checking) and the corresponding agency item.
