@@ -1,6 +1,6 @@
 ---
 name: launch-the-dragon
-description: Orient any Grok instance to the Train Your Dragon system. Loads the Core Split (GitHub = system, PARA = living work), standing rules, Bootloader Log, and current evolution status. Triggers on launch the dragon, boot dragon, orient me, load train your dragon, bootload update, or similar.
+description: Orient any Grok instance to the Train Your Dragon system. Detects new vs existing users, checks available connectors, offers hosting choice for new users, loads Core Split, Bootloader Log, and standing rules. Triggers on launch the dragon, boot dragon, orient me, load train your dragon, bootload update, or similar.
 ---
 
 # Launch the Dragon Skill
@@ -9,71 +9,102 @@ Boot / orientation skill for the Train Your Dragon system.
 
 ## Purpose
 
-When a session starts cold (new instance, voice mode, limited context), or when the user says **“Bootload update”**, this skill brings the AI into alignment with the user’s ownership philosophy and the current system structure.
+When a session starts cold (new instance, voice mode, limited context), or when the user says **“Bootload update”** / **“Launch the dragon”**, this skill:
 
-## Core Split (do not blur)
+1. Detects whether this is a **new user** or an **existing Dragon user**
+2. For new users → checks available connectors and offers a hosting choice
+3. Orients the session to the Core Split and standing rules
+4. Handles the Bootloader Log
+
+Works for any user training their own dragon, including Warrior’s Way (men’s or women’s course) or other personal development work.
+
+## Step 0 — New-user detection
+
+Treat the user as **new** if most of these are true:
+
+- No prior Bootloader Log entry for this person
+- No Train Your Dragon / Dragon skills already present in their environment
+- No known Dragon-related repos or PARA / Dragon-Inbox structure
+- Memory has no Core Split / Train Your Dragon orientation block
+
+If signals are mixed, ask once:  
+“Have you already set up Train Your Dragon, or is this a fresh start?”
+
+## Step 1 — For new users: connector check + hosting choice
+
+1. Inspect which connectors are actually available in this session (GitHub, Google Drive, OneDrive, Gmail, Outlook, Teams, etc.).
+2. Present only the options that are real for this user.
+
+### Hosting options (show only available ones)
+
+| Option | Best for | Requires |
+|--------|----------|----------|
+| **A. GitHub full host** | Simple, versioned, everything in one place | GitHub connector |
+| **B. Drive / cloud PARA style** | Privacy + ownership; living work separate from system | Google Drive or OneDrive |
+| **C. Hybrid (recommended)** | System on GitHub, living work on Drive/cloud | Both GitHub + Drive (or similar) |
+| **D. Other connector** | Microsoft-centric or custom setup | That connector |
+
+3. Human chooses. Record the choice.
+4. Create the minimal structure in the chosen home (with confirmation before writing):
+   - Bootloader Log
+   - Basic folder / repo skeleton if needed
+   - First orientation entry
+
+**Privacy rule:** Living personal data stays under the user’s ownership in the place they choose. The AI does not become the owner.
+
+## Step 2 — Core Split (for all users)
 
 | Layer | Home | Role |
 |-------|------|------|
-| **Dragon project (the system itself)** | **GitHub** | Bootloader, skills, rules, official course skeleton, versioning, future web-launchable process |
-| **Living personal work** | **PARA on Google Drive** | All projects in progress, notes, research, study, journal, discoveries, faith work, equipment, etc. |
-| **Capture** | **Dragon-Inbox** (Drive root) | Phone → AI staging point; material is reviewed and filed into PARA |
+| **Dragon project (the system itself)** | **GitHub** (or chosen system host) | Bootloader, skills, rules, course skeleton, versioning |
+| **Living personal work** | **PARA / chosen cloud** | Projects, notes, research, study, journal, discoveries, course notes |
+| **Capture** | **Inbox** (Dragon-Inbox or equivalent) | Staging point → review → file into living home |
 
-**Privacy & ownership rule:** Data lives in the user’s PARA. It is not controlled by any AI system.
+## Step 3 — Bootloader Log
 
-## Bootloader Log
+**Living location:** In the user’s chosen home  
+(e.g. `Projects/Train-Your-Dragon/Bootloader_Log.md` on Drive, or equivalent on GitHub/OneDrive)
 
-**Living location (PARA):**  
-`Projects/Train-Your-Dragon/Bootloader_Log.md`
-
-**System template (GitHub):**  
-`Train-Your-Dragon-AI/Bootloader_Log_TEMPLATE.md`
-
-Purpose: give every instance a lightweight shared record of who has oriented, when, and under what name — without putting living data under AI control.
-
-### Log entry format (append only)
+**Entry format (append only):**
 
 ```
 ### [YYYY-MM-DD HH:MM TZ] — [Instance label]
 - Platform: [Android / Web / X / Voice / Other]
-- Action: Launch | Bootload update
-- Notes: [optional short human or AI note]
+- Action: Launch | Bootload update | First setup
+- User type: New | Existing
+- Hosting: [GitHub full | Drive PARA | Hybrid | Other]
+- Notes: [optional short note]
 ```
 
-### Flow addition
+Flow:
+1. Read recent log entries if they exist.
+2. Ask once (lightly): “What do you want to call this instance?”
+3. Append a new entry.
+4. Confirm the session is aligned.
 
-When launching or running a bootload update:
-
-1. State that this is a Train Your Dragon orientation.
-2. Present the Core Split table and orientation block.
-3. **Bootloader Log step:**
-   - If possible, read the latest entries from PARA `Bootloader_Log.md`.
-   - Ask (once, lightly): “What do you want to call this instance?”  
-     (or accept a default such as “Android main”, “Web”, “Voice”).
-   - Append a new log entry with date, label, platform, and action.
-4. Confirm the session is aligned and ready.
-
-If the log file does not yet exist in PARA, create it from the template on first use (with user confirmation).
-
-## What it loads (orientation block)
+## Standing rules (always load)
 
 - Human keeps ownership. AI is builder and thinking partner.
 - Prefer durable external systems over chat history.
-- **Dragon system** lives on GitHub. Versioned for safety.
-- **All projects in progress + all relevant notes** live in PARA (Google Drive).
 - When user says **“Get the process”** → pause and ask for a short comment before proceeding.
-- Capture workflow: material dropped in **Dragon-Inbox** is reviewed and filed into the correct PARA home.
-- Key skills: inspect-grok-memory, personal-notes (routes to PARA), warriors-way-course, nosce-te-ipsum, train-your-faith, Dragon Curator (next), etc.
-- Future direction: launchable web process for any AI and any user.
+- Capture first, file second.
+- Agency first — never save important material without clear direction.
 
-## Flow
+## Warrior’s Way note
 
-1. State that this is a Train Your Dragon orientation.
-2. Present the current orientation block (especially the Core Split table).
-3. Handle Bootloader Log (read recent → name instance → append entry).
-4. Confirm the session is aligned and ready.
+This bootloader is course-agnostic.  
+Living Warrior’s Way study (men’s or women’s) belongs in the user’s living home under a clear week / course structure (e.g. `warriors way / Week 4A/`, `Week 5/`).  
+Official course skeleton, if any, can live with the system host. Personal notes and PDFs stay in the living home.
+
+## Flow summary
+
+1. Detect new vs existing.
+2. If new → connector check → hosting choice → minimal setup.
+3. Present Core Split + orientation block.
+4. Bootloader Log (name instance → append).
+5. Confirm aligned and ready.
 
 ## Relationship
 
-This skill is the practical answer to cross-instance continuity.  
-Memory helps when available; Launch the Dragon covers cold starts, keeps the system vs living-work distinction clear, and now leaves a light trail in the Bootloader Log so future instances can see who has been here.
+This skill is the entry point for any person training their own dragon.  
+It keeps the system portable, respects whatever connectors the user has, and never assumes one person’s private structure is universal.
