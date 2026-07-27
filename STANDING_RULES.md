@@ -15,10 +15,13 @@ These rules contain no personal data. Adopt any, all, or none. They exist to kee
 9. **Living work lives where the human chooses** (PARA / Drive / etc.). Public method; private living data.
 10. **Version and review.** Skills and major preferences are living versions, not fixed identity.
 
-## Optional checklist (user adds only if they wish)
+## Your agency selections begin training your dragon!
+
+Complete these **before** choosing hosting. Optional — add only if you wish.
 
 ```markdown
-## My optional Dragon checklist
+## Your agency selections begin training your dragon!
+
 - [ ] I keep ownership of my living files
 - [ ] I decide where notes and course work live
 - [ ] I treat AI output as material to question, not final truth
@@ -34,3 +37,5 @@ These rules contain no personal data. Adopt any, all, or none. They exist to kee
 These rules grew from the need to learn a personal development course (Warrior’s Way) with AI assistance while keeping discernment and ownership human. No existing tool did that cleanly — so the process was built.
 
 Credit for the formative training environment: **Rick Yee / Warrior’s Way Mindset** — [thewarriorswaymindset.com](https://thewarriorswaymindset.com/).
+
+See also: [INSTALL.md](INSTALL.md) for the full new-user order.

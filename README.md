@@ -2,6 +2,8 @@
 
 Public principles and starter skills for training a personal AI collaborator.
 
+**New here?** Start with [INSTALL.md](INSTALL.md) — agency selections first, then hosting.
+
 ## Community
 
 **User / developer channel (Telegram):**  
@@ -20,7 +22,8 @@ Warrior’s Way required durable notes, week-by-week structure, research (includ
 
 That is the origin of Train Your Dragon.
 
-**Standing rules (public, optional to adopt):** [STANDING_RULES.md](STANDING_RULES.md)
+**Standing rules (public, optional to adopt):** [STANDING_RULES.md](STANDING_RULES.md)  
+**Install order (new users):** [INSTALL.md](INSTALL.md)
 
 ---
 
@@ -141,7 +144,8 @@ Without versioning, both human and AI risk locking in temporary conclusions as p
 
 ## Skills and core files in this repo
 
-- [STANDING_RULES.md](STANDING_RULES.md) — Public-safe standing rules + optional user checklist
+- [INSTALL.md](INSTALL.md) — New-user order (agency selections before hosting)
+- [STANDING_RULES.md](STANDING_RULES.md) — Public-safe standing rules + agency checklist
 - [WHITE_PAPER.md](WHITE_PAPER.md) — Agency-first AI collaboration
 - [principles.md](principles.md) — Foundational rules
 - [SYSTEM_STRUCTURE.md](SYSTEM_STRUCTURE.md) — PARA, personal vs method work, operating pattern
