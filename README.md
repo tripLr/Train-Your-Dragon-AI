@@ -2,6 +2,14 @@
 
 Public principles and starter skills for training a personal AI collaborator.
 
+## Community
+
+**User / developer channel (Telegram):**  
+[https://t.me/triplr_dev_users](https://t.me/triplr_dev_users)
+
+You are invited to join for discussion, updates, and peer conversation around training your own dragon.  
+**Formal issues and proposals** still belong on this GitHub repository (Issues / Discussions). The Telegram channel is optional community space, not a support desk.
+
 ## Current Operational State
 
 This is what is running today:
