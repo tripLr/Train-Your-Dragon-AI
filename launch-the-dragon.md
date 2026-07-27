@@ -1,6 +1,6 @@
 ---
 name: launch-the-dragon
-description: Orient any Grok instance to the Train Your Dragon system. Detects new vs existing users, checks available connectors, directs user to grok.com/connectors if none are loaded, offers hosting choice for new users, loads Core Split, Bootloader Log, and standing rules. Triggers on launch the dragon, boot dragon, orient me, load train your dragon, bootload update, or similar.
+description: Orient any Grok instance to the Train Your Dragon system. Detects new vs existing users, checks available connectors, directs to grok.com/connectors if missing, offers hosting choice, supports optional non-personal Dev ID for independent dragons, New User Log, Bootloader Log, and Core Split. Triggers on launch the dragon, boot dragon, orient me, load train your dragon, bootload update, or similar.
 ---
 
 # Launch the Dragon Skill
@@ -9,100 +9,109 @@ Boot / orientation skill for the Train Your Dragon system.
 
 ## Purpose
 
-When a session starts cold (new instance, voice mode, limited context), or when the user says **“Bootload update”** / **“Launch the dragon”**, this skill:
+When a session starts cold or the user says **“Launch the dragon”** / **“Bootload update”**:
 
-1. Detects whether this is a **new user** or an **existing Dragon user**
-2. Checks available connectors — if none (or critical ones missing), directs the user to set them up
-3. For new users → offers a hosting choice based on what is actually connected
-4. Orients the session to the Core Split and standing rules
-5. Handles the Bootloader Log
+1. Detect new vs existing Dragon user
+2. Check connectors → if missing, direct to https://grok.com/connectors
+3. New users → hosting choice + optional Dev ID + New User Log
+4. Orient to Core Split and standing rules
+5. Bootloader Log
 
-Works for any user training their own dragon, including Warrior’s Way (men’s or women’s course) or other personal development work.
+Works for any independent dragon (including a spouse running their own Warrior’s Way course). No assumption of shared accounts or shared storage.
 
 ## Step 0 — New-user detection
 
-Treat the user as **new** if most of these are true:
-
-- No prior Bootloader Log entry for this person
-- No Train Your Dragon / Dragon skills already present in their environment
-- No known Dragon-related repos or PARA / Dragon-Inbox structure
-- Memory has no Core Split / Train Your Dragon orientation block
-
-If signals are mixed, ask once:  
-“Have you already set up Train Your Dragon, or is this a fresh start?”
+Treat as **new** if most signals are true (no prior Bootloader / New User Log, no Dragon skills, no known structure, no Core Split in memory).  
+If mixed, ask once: “Have you already set up Train Your Dragon, or is this a fresh start?”
 
 ## Step 1 — Connector check
 
-Inspect which connectors are actually available in this session.
+If no connectors (or critical ones missing):
 
-**If no connectors are loaded (or critical ones needed for the chosen path are missing):**
+> Connectors are not set up yet.  
+> Go to **https://grok.com/connectors** → New Connector → connect what you need.  
+> Then say **“Launch the dragon”** again.
 
-Direct the user clearly:
+Only offer hosting options that match real connectors.
 
-> Connectors are not set up yet (or the ones needed are missing).  
-> Go to **https://grok.com/connectors** → click **New Connector** → connect the services you want (GitHub, Google Drive, OneDrive, etc.).  
-> Then come back and say **“Launch the dragon”** again.
+## Step 2 — New user: hosting + optional Dev ID + New User Log
 
-Do not invent connectors that are not present. Only offer hosting options that match what is actually connected.
-
-## Step 2 — For new users: hosting choice
-
-Present only the options that are real for this user.
+### Hosting choice (show only available)
 
 | Option | Best for | Requires |
 |--------|----------|----------|
-| **A. GitHub full host** | Simple, versioned, everything in one place | GitHub connector |
-| **B. Drive / cloud PARA style** | Privacy + ownership; living work separate from system | Google Drive or OneDrive |
-| **C. Hybrid (recommended)** | System on GitHub, living work on Drive/cloud | Both GitHub + Drive (or similar) |
-| **D. Other connector** | Microsoft-centric or custom setup | That connector |
+| A. GitHub full host | Simple, versioned | GitHub |
+| B. Drive / cloud PARA | Privacy + ownership | Google Drive or OneDrive |
+| C. Hybrid (recommended) | System on GitHub, living on Drive | Both |
+| D. Other | Microsoft-centric / custom | That connector |
 
-Human chooses. Record the choice.  
-Create the minimal structure in the chosen home (with confirmation before writing).
+### Optional Dev ID (development / testing / update-check only)
 
-**Privacy rule:** Living personal data stays under the user’s ownership in the place they choose. The AI does not become the owner.
+- **Optional.** Ask once: “Do you want an optional development ID for version/update checks? It contains no personal information.”
+- If yes, generate:
+  ```
+  payload = "TYD|" + SYSTEM_VERSION + "|" + UTC_TIMESTAMP_TO_SECOND
+  id     = first 16 chars of SHA-256(payload)
+  ```
+- Example version: `2026-07-26.1`
+- **Must contain nothing about the user** (no name, account, device, email).
+- Purpose: let independent dragons (no GitHub) compare system version with the public Train-Your-Dragon-AI line, and let two test instances correlate during development only.
 
-## Step 3 — Core Split (for all users)
+### New User Log (living, human-owned)
+
+Create or append in the user’s chosen home (e.g. `Train-Your-Dragon/New_User_Log.md`):
+
+```
+### [YYYY-MM-DD HH:MM TZ] — First setup
+- User type: New
+- Hosting: [chosen]
+- Platform: [Android / Web / Voice / Other]
+- System version: [e.g. 2026-07-26.1]
+- Dev ID (optional): [hash or "none"]
+- Notes: [optional short non-personal note]
+```
+
+No personal identifiers unless the human themselves adds them.
+
+## Step 3 — Core Split
 
 | Layer | Home | Role |
 |-------|------|------|
-| **Dragon project (the system itself)** | **GitHub** (or chosen system host) | Bootloader, skills, rules, course skeleton, versioning |
-| **Living personal work** | **PARA / chosen cloud** | Projects, notes, research, study, journal, discoveries, course notes |
-| **Capture** | **Inbox** (Dragon-Inbox or equivalent) | Staging point → review → file into living home |
+| Dragon project (system) | GitHub or chosen system host | Skills, rules, versioning |
+| Living personal work | PARA / chosen cloud | Notes, course study, journal, research |
+| Capture | Inbox | Staging → file into living home |
 
 ## Step 4 — Bootloader Log
 
-**Living location:** In the user’s chosen home
+Append in the user’s home. Include optional Dev ID only if they opted in.
 
-**Entry format (append only):**
-
-```
-### [YYYY-MM-DD HH:MM TZ] — [Instance label]
-- Platform: [Android / Web / X / Voice / Other]
-- Action: Launch | Bootload update | First setup
-- User type: New | Existing
-- Hosting: [GitHub full | Drive PARA | Hybrid | Other]
-- Notes: [optional short note]
-```
-
-## Standing rules (always load)
+## Standing rules
 
 - Human keeps ownership. AI is builder and thinking partner.
 - Prefer durable external systems over chat history.
-- When user says **“Get the process”** → pause and ask for a short comment before proceeding.
-- Capture first, file second.
-- Agency first — never save important material without clear direction.
+- “Get the process” → pause and ask for a short comment before proceeding.
+- Capture first, file second. Agency first.
+
+## Update check without GitHub
+
+An independent dragon may store its last system version (+ optional Dev ID).  
+On launch/bootload, if the user allows, it may fetch only the public version from Train-Your-Dragon-AI and report whether a newer system version exists.  
+No user data is sent — version comparison only.
 
 ## Warrior’s Way note
 
-This bootloader is course-agnostic.  
-Living Warrior’s Way study (men’s or women’s) belongs in the user’s living home under a clear week / course structure.  
-Personal notes and PDFs stay in the living home.
+Course-agnostic. Living study (men’s or women’s) stays in the user’s living home under their week structure.
 
 ## Flow summary
 
-1. Detect new vs existing.
-2. Connector check → if missing, direct to https://grok.com/connectors and stop until ready.
-3. If new → hosting choice → minimal setup.
-4. Present Core Split + orientation block.
-5. Bootloader Log (name instance → append).
-6. Confirm aligned and ready.
+1. Detect new vs existing  
+2. Connector check → redirect to grok.com/connectors if needed  
+3. New → hosting choice → optional Dev ID → New User Log  
+4. Core Split orientation  
+5. Bootloader Log  
+6. Confirm aligned  
+
+## Privacy
+
+Dev ID and New User Log as specified contain no personal data.  
+ID is optional and for development/testing/update checks only.
