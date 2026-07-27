@@ -20,6 +20,8 @@ Warrior’s Way required durable notes, week-by-week structure, research (includ
 
 That is the origin of Train Your Dragon.
 
+**Standing rules (public, optional to adopt):** [STANDING_RULES.md](STANDING_RULES.md)
+
 ---
 
 ## Credit — Warrior’s Way Mindset
@@ -139,13 +141,14 @@ Without versioning, both human and AI risk locking in temporary conclusions as p
 
 ## Skills and core files in this repo
 
-- [WHITE_PAPER.md](WHITE_PAPER.md) — Agency-first AI collaboration: working model, digital minimalism comparison, values/safety gap, and why trained personal systems may reduce the need to wait for AGI
-- [principles.md](principles.md) — Foundational rules (including “You train your own dragon” and memory as core)
-- [SYSTEM_STRUCTURE.md](SYSTEM_STRUCTURE.md) — Why agency needs organization, how PARA entered the system, personal vs method work, and the current operating pattern
-- [memory-skill.md](memory-skill.md) — How to build and maintain a durable, versioned personal memory system
-- [public-update-process.md](public-update-process.md) — Required checklist for any change to this public repository (human review before push)
-- [ORIGIN.md](ORIGIN.md) — Permanent public record of how the versioning approach was created and why it exists
-- [FUTURE.md](FUTURE.md) — Open future goals that others are welcome to pick up
+- [STANDING_RULES.md](STANDING_RULES.md) — Public-safe standing rules + optional user checklist
+- [WHITE_PAPER.md](WHITE_PAPER.md) — Agency-first AI collaboration
+- [principles.md](principles.md) — Foundational rules
+- [SYSTEM_STRUCTURE.md](SYSTEM_STRUCTURE.md) — PARA, personal vs method work, operating pattern
+- [memory-skill.md](memory-skill.md) — Durable, versioned personal memory system
+- [public-update-process.md](public-update-process.md) — Checklist for changes to this public repository
+- [ORIGIN.md](ORIGIN.md) — How the versioning approach was created
+- [FUTURE.md](FUTURE.md) — Open future goals
 - [LICENSE](LICENSE) — MIT License with permanent credit and history-preservation requirement
 
 ## Private Conversation Archive Pattern
