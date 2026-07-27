@@ -1,6 +1,6 @@
 # System Structure — Why Agency Needs Organization
 
-**Updated:** 2026-07-25  
+**Updated:** 2026-07-26  
 **Audience:** Anyone training their own dragon, including people who are new to formal development processes.
 
 ---
@@ -14,6 +14,20 @@ It is about **integration**.
 Existing AI functions (memory, tools, conversation, search, file systems, skills) are brought into personal lived experience under human ownership. The human does not have unlimited time, knowledge, or resources. The system must therefore be simple enough to use and strong enough to compound.
 
 That is why organization matters.
+
+---
+
+## Core Split (do not blur) — 2026-07-26 evolution
+
+| Layer | Home | Role |
+|-------|------|------|
+| **Dragon project (the system itself)** | **GitHub** | Bootloader, skills, rules, official course skeleton, versioning, future web-launchable process |
+| **Living personal work** | **PARA on Google Drive** | All projects in progress, notes, research, study, journal, discoveries, faith work, equipment, etc. |
+| **Capture** | **Dragon-Inbox** (Drive root) | Phone → AI staging point; material is reviewed and filed into PARA |
+
+**Privacy & ownership rule:** Data lives in the user’s PARA. It is not controlled by any AI system.
+
+This split was clarified on 2026-07-26 after the bootloader and skills had temporarily treated private GitHub as the home for living personal notes. That was corrected. The Dragon *system* stays on GitHub for versioning and future public launch. Everything the human is actually working on lives in PARA under the human’s ownership.
 
 ---
 
@@ -58,12 +72,10 @@ This keeps personal life and study material from becoming a dump. Everything has
 
 ## Two kinds of work (important distinction)
 
-As the system grew, a second kind of work appeared alongside personal development.
-
 | Kind of work | Where it lives | Examples |
 |--------------|----------------|----------|
-| **Personal** | Your private PARA / Drive / memory | Course notes, self-reflection, diet, equipment projects, journal |
-| **Method / capability** | Public Train-Your-Dragon-AI repo + development rules | Capture workflows, bootloader, process review, filing rules, cross-instance continuity |
+| **Personal** | Your PARA (Google Drive) | Course notes, self-reflection, diet, equipment projects, journal, research, discoveries |
+| **Method / capability** | Public Train-Your-Dragon-AI repo | Capture workflows, bootloader, process review, filing rules, cross-instance continuity, Dragon Curator |
 
 Personal work stays private and organized by PARA.
 
@@ -78,16 +90,16 @@ This distinction protects agency. Personal material stays yours. System improvem
 ```
 You (agency)
 ├── Personal work → PARA (Projects / Areas / Resources / Archives)
-│     └── Living material in Google Drive + private memory
+│     └── Living material in Google Drive
 │
-└── Method / capability work → Public Train-Your-Dragon-AI
+└── Method / capability work → Public Train-Your-Dragon-AI (GitHub)
       └── Rules, bootloader, capture, process review, skills
 ```
 
-**Dragon-Inbox** is the capture point for personal material (phone → AI review → correct home).
+**Dragon-Inbox** is the capture point for personal material (phone → AI review → correct home in PARA).
 
-**Bootloader** lets any instance load the current rules and course map.  
-Saying **“Bootload update”** re-reads the rules in an already-running session.
+**Bootloader** (`launch-the-dragon`) lets any instance load the current rules and the Core Split.  
+Saying **“Bootload update”** or **“Launch the Dragon”** re-orients an already-running session.
 
 ---
 
@@ -97,7 +109,7 @@ When work improves how the collaboration itself runs (efficiency, continuity, ca
 
 1. Record it in the public Train-Your-Dragon-AI project.
 2. Update the standing development rules so future instances inherit it.
-3. Keep personal content in PARA / private systems.
+3. Keep personal content in PARA.
 
 This prevents the system from improving in private while the public method stays frozen, and it prevents personal material from being mixed into public method docs.
 

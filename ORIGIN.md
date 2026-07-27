@@ -21,6 +21,12 @@ This file is a permanent public record of how the core versioning principle in t
 - **23 July 2026** — Bootloader successful test.  
   The private BOOTLOAD_Train_Your_Dragon.md (My-Dragon-AI) was used to orient a live session. Process: read the bootload file first, then execute “Launch the dragon.” Authenticated private-repo access worked; public raw URL correctly returned 404. Orientation block loaded cleanly. Durability / cross-instance continuity advanced under live conditions. Successful entry recorded in private history.
 
+- **25 July 2026** — PARA + Dragon-Inbox integrated.  
+  System structure formalized: GitHub holds system + official course; Google Drive PARA holds living personal work; Dragon-Inbox becomes the permanent capture staging point.
+
+- **26 July 2026** — Core Split evolution (privacy & ownership).  
+  Clarified and enforced: the Dragon *project/system* lives on GitHub (versioned, future web-launchable). All projects in progress and all relevant notes/research live in the user’s PARA. Data ownership and privacy stay with the human, not under AI-system control. Bootloader and personal-notes skill updated to stop treating private GitHub as the home for living personal data. Direction set for **Dragon Curator** skill (any thread / any source → PARA routing). Recorded as a perfect evolution of Train Your Dragon.
+
 ## Why versioning is required
 
 Through a deep examination of information theory and repeated observation of AI systems, the author concluded that an AI interaction is only as good as the information it is given.  
