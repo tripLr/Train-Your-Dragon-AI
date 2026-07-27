@@ -8,7 +8,72 @@ Public principles and starter skills for training a personal AI collaborator.
 [https://t.me/triplr_dev_users](https://t.me/triplr_dev_users)
 
 You are invited to join for discussion, updates, and peer conversation around training your own dragon.  
-**Formal issues and proposals** still belong on this GitHub repository (Issues / Discussions). The Telegram channel is optional community space, not a support desk.
+**Formal issues and proposals** still belong on this GitHub repository (Issues / Discussions). The Telegram channel is optional community space.
+
+---
+
+## Why this project exists
+
+No existing tools could give an AI that truly assisted with a deep personal development course while keeping ownership, agency, and discernment with the human.
+
+Warrior’s Way required durable notes, week-by-week structure, research (including general and Bible study), and the ongoing practice of *questioning everything* — including the AI’s own output. Generic chat could not hold that. So the process was built: durable external systems under human ownership, AI as builder and thinking partner, curation kept with the human.
+
+That is the origin of Train Your Dragon.
+
+---
+
+## Credit — Warrior’s Way Mindset
+
+This work was forged in the context of **Warrior’s Way Mindset**, founded by **Rick Yee**.
+
+- Website: [thewarriorswaymindset.com](https://thewarriorswaymindset.com/)
+- YouTube: [Rick Yee: Warrior's Way Mindset](https://www.youtube.com/@warriorswaymindset)
+- Podcast: *The Battlefield of the Mind* — [Apple Podcasts](https://podcasts.apple.com/us/podcast/the-battlefield-of-the-mind/id1576146255) · [YouTube playlist](https://www.youtube.com/playlist?list=PLsWZGjPfD3TjyDNWeH0kpdjnZiDRku8Dx)
+
+The creed and training environment of Warrior’s Way shaped the values that later became the architecture of this project. Credit belongs there first.
+
+---
+
+## Warrior’s Way Creed — Applied Across Domains
+
+**The creed (as applied here)**  
+Trust is the heart.  
+No blame, shame, or judgement.  
+Question everything — including results that come from AI, because it is programmed with human data.  
+Curation stays with the human: information runs through human values and returns full agency to the human.
+
+**Domain**  
+The creed is not limited to the course. It works in any relationship, project, method, development, and business — anywhere ownership, trust, and clear agency matter.
+
+**Applied to myself**  
+The same creed was applied to the course, its materials, added general research and Bible research, and even to personal beliefs — all to help find authenticity. Information was not accepted as authority; it was run through personal discernment so agency and self-knowledge stayed with the human.
+
+**Applied to Train Your Dragon**  
+The same stance became the architecture of human–AI collaboration:
+
+- Human owns the living work; AI is builder and thinking partner  
+- System layer stays non-personal and portable  
+- Collaboration method is offered publicly; living data stays private  
+- Versioning, checkpoints, and “question everything” are built into the process  
+- Independent dragons for other people — shared method, no forced dependency  
+
+**Why certain things are refused in personal AI interaction**
+
+| What is refused | Creed reason |
+|-----------------|--------------|
+| AI owning the center of the work | Trust and agency stay with the human |
+| Personal identity mixed into the system layer | No silent capture or labelling of the person |
+| Collaboration process locked only in private instances | Method belongs in public consciousness so others can own and guide it too |
+| Forced structure / one-size hosting | Agency requires choice |
+| Chat history as source of truth | Durable truth must live under human ownership |
+| Irreversible actions without a human checkpoint | Curation and final say stay human |
+| Speculative big builds before tested slices | Humility and “question everything” favor small, revisable steps |
+| Framework becoming a fixed identity to defend | Versioning keeps the tool under revision, not a self to protect |
+
+**Thus the process**  
+Human ownership. Human curation. Public method. Private living work. Question everything. Agency returned — and kept.
+
+---
 
 ## Current Operational State
 
@@ -46,14 +111,6 @@ A clear, versioned, human-owned memory file is the foundation of the system.
 Skills, conversation archives, and tools exist to serve and extend that core memory — they do not replace it.
 
 Without a durable memory under your control, there is no compounding intelligence that belongs to you.
-
-## Why this exists
-
-Most AI conversations start from zero every time. Chat history becomes noisy or disappears.
-
-This project captures a practical alternative that emerged from real use: the human builds and owns durable external systems, starting with a structured memory file, then adding clear skills and (optionally) a private conversation archive. The AI becomes a consistent thinking partner instead of a forgetful tool.
-
-Private, highly personal, or course-specific skills stay in your My-Dragon-AI repo.
 
 ## How this collaboration model works
 
