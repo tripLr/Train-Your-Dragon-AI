@@ -23,7 +23,8 @@ Warrior’s Way required durable notes, week-by-week structure, research (includ
 That is the origin of Train Your Dragon.
 
 **Standing rules (public, optional to adopt):** [STANDING_RULES.md](STANDING_RULES.md)  
-**Install order (new users):** [INSTALL.md](INSTALL.md)
+**Install order (new users):** [INSTALL.md](INSTALL.md)  
+**Dragon Master (public source of truth):** [DRAGON_MASTER.md](DRAGON_MASTER.md)
 
 ---
 
@@ -146,11 +147,12 @@ Without versioning, both human and AI risk locking in temporary conclusions as p
 
 - [INSTALL.md](INSTALL.md) — New-user order (agency selections before hosting)
 - [STANDING_RULES.md](STANDING_RULES.md) — Public-safe standing rules + agency checklist
+- [DRAGON_MASTER.md](DRAGON_MASTER.md) — Public source of truth, pull & contribute process
 - [WHITE_PAPER.md](WHITE_PAPER.md) — Agency-first AI collaboration
 - [principles.md](principles.md) — Foundational rules
 - [SYSTEM_STRUCTURE.md](SYSTEM_STRUCTURE.md) — PARA, personal vs method work, operating pattern
 - [memory-skill.md](memory-skill.md) — Durable, versioned personal memory system
-- [public-update-process.md](public-update-process.md) — Checklist for changes to this public repository
+- [public-update-process.md](public-update-process.md) — Checklist for changes to this public repository (both directions)
 - [ORIGIN.md](ORIGIN.md) — How the versioning approach was created
 - [FUTURE.md](FUTURE.md) — Open future goals
 - [LICENSE](LICENSE) — MIT License with permanent credit and history-preservation requirement
