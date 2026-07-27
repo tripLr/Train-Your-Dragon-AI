@@ -1,6 +1,6 @@
 ---
 name: launch-the-dragon
-description: Orient any Grok instance to the Train Your Dragon system. Detects new vs existing users, checks available connectors, offers hosting choice for new users, loads Core Split, Bootloader Log, and standing rules. Triggers on launch the dragon, boot dragon, orient me, load train your dragon, bootload update, or similar.
+description: Orient any Grok instance to the Train Your Dragon system. Detects new vs existing users, checks available connectors, directs user to grok.com/connectors if none are loaded, offers hosting choice for new users, loads Core Split, Bootloader Log, and standing rules. Triggers on launch the dragon, boot dragon, orient me, load train your dragon, bootload update, or similar.
 ---
 
 # Launch the Dragon Skill
@@ -12,9 +12,10 @@ Boot / orientation skill for the Train Your Dragon system.
 When a session starts cold (new instance, voice mode, limited context), or when the user says **“Bootload update”** / **“Launch the dragon”**, this skill:
 
 1. Detects whether this is a **new user** or an **existing Dragon user**
-2. For new users → checks available connectors and offers a hosting choice
-3. Orients the session to the Core Split and standing rules
-4. Handles the Bootloader Log
+2. Checks available connectors — if none (or critical ones missing), directs the user to set them up
+3. For new users → offers a hosting choice based on what is actually connected
+4. Orients the session to the Core Split and standing rules
+5. Handles the Bootloader Log
 
 Works for any user training their own dragon, including Warrior’s Way (men’s or women’s course) or other personal development work.
 
@@ -30,12 +31,23 @@ Treat the user as **new** if most of these are true:
 If signals are mixed, ask once:  
 “Have you already set up Train Your Dragon, or is this a fresh start?”
 
-## Step 1 — For new users: connector check + hosting choice
+## Step 1 — Connector check
 
-1. Inspect which connectors are actually available in this session (GitHub, Google Drive, OneDrive, Gmail, Outlook, Teams, etc.).
-2. Present only the options that are real for this user.
+Inspect which connectors are actually available in this session.
 
-### Hosting options (show only available ones)
+**If no connectors are loaded (or critical ones needed for the chosen path are missing):**
+
+Direct the user clearly:
+
+> Connectors are not set up yet (or the ones needed are missing).  
+> Go to **https://grok.com/connectors** → click **New Connector** → connect the services you want (GitHub, Google Drive, OneDrive, etc.).  
+> Then come back and say **“Launch the dragon”** again.
+
+Do not invent connectors that are not present. Only offer hosting options that match what is actually connected.
+
+## Step 2 — For new users: hosting choice
+
+Present only the options that are real for this user.
 
 | Option | Best for | Requires |
 |--------|----------|----------|
@@ -44,15 +56,12 @@ If signals are mixed, ask once:
 | **C. Hybrid (recommended)** | System on GitHub, living work on Drive/cloud | Both GitHub + Drive (or similar) |
 | **D. Other connector** | Microsoft-centric or custom setup | That connector |
 
-3. Human chooses. Record the choice.
-4. Create the minimal structure in the chosen home (with confirmation before writing):
-   - Bootloader Log
-   - Basic folder / repo skeleton if needed
-   - First orientation entry
+Human chooses. Record the choice.  
+Create the minimal structure in the chosen home (with confirmation before writing).
 
 **Privacy rule:** Living personal data stays under the user’s ownership in the place they choose. The AI does not become the owner.
 
-## Step 2 — Core Split (for all users)
+## Step 3 — Core Split (for all users)
 
 | Layer | Home | Role |
 |-------|------|------|
@@ -60,10 +69,9 @@ If signals are mixed, ask once:
 | **Living personal work** | **PARA / chosen cloud** | Projects, notes, research, study, journal, discoveries, course notes |
 | **Capture** | **Inbox** (Dragon-Inbox or equivalent) | Staging point → review → file into living home |
 
-## Step 3 — Bootloader Log
+## Step 4 — Bootloader Log
 
-**Living location:** In the user’s chosen home  
-(e.g. `Projects/Train-Your-Dragon/Bootloader_Log.md` on Drive, or equivalent on GitHub/OneDrive)
+**Living location:** In the user’s chosen home
 
 **Entry format (append only):**
 
@@ -76,12 +84,6 @@ If signals are mixed, ask once:
 - Notes: [optional short note]
 ```
 
-Flow:
-1. Read recent log entries if they exist.
-2. Ask once (lightly): “What do you want to call this instance?”
-3. Append a new entry.
-4. Confirm the session is aligned.
-
 ## Standing rules (always load)
 
 - Human keeps ownership. AI is builder and thinking partner.
@@ -93,18 +95,14 @@ Flow:
 ## Warrior’s Way note
 
 This bootloader is course-agnostic.  
-Living Warrior’s Way study (men’s or women’s) belongs in the user’s living home under a clear week / course structure (e.g. `warriors way / Week 4A/`, `Week 5/`).  
-Official course skeleton, if any, can live with the system host. Personal notes and PDFs stay in the living home.
+Living Warrior’s Way study (men’s or women’s) belongs in the user’s living home under a clear week / course structure.  
+Personal notes and PDFs stay in the living home.
 
 ## Flow summary
 
 1. Detect new vs existing.
-2. If new → connector check → hosting choice → minimal setup.
-3. Present Core Split + orientation block.
-4. Bootloader Log (name instance → append).
-5. Confirm aligned and ready.
-
-## Relationship
-
-This skill is the entry point for any person training their own dragon.  
-It keeps the system portable, respects whatever connectors the user has, and never assumes one person’s private structure is universal.
+2. Connector check → if missing, direct to https://grok.com/connectors and stop until ready.
+3. If new → hosting choice → minimal setup.
+4. Present Core Split + orientation block.
+5. Bootloader Log (name instance → append).
+6. Confirm aligned and ready.
