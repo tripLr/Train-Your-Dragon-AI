@@ -134,6 +134,7 @@ Append in the user’s home. Include optional Dev ID only if they opted in.
 - Capture first, file second. Agency first.
 - **All future and now updates show where the update is applied.** (State the file or location being changed.)
 - **Show where processes and files are updated and created in every instance.**
+- **Local rules and skills need version checking.** When a local copy of a skill or ruleset is loaded, compare it against the public/system version (from Train-Your-Dragon-AI or Shared-Dragon-AI) and report any differences so the human stays in control of which version is active.
 
 ## Update check without GitHub
 
@@ -167,5 +168,6 @@ ID is optional and for development/testing/update checks only.
 
 ## Change log
 
-- **2026-07-26** — Existing-user flow simplified to clean status + inbox awareness. Added standing rule: all updates must show where they are applied.
-- **2026-07-26 (later)** — Added agency item + standing rule: “I want to know where processes and files are updated and created in every instance.”
+- **2026-07-26** — Existing-user flow simplified to clean status + inbox awareness. Added standing rule: all updates must show where they are applied. Location of this update: `/home/workdir/.grok/skills/launch-the-dragon/SKILL.md`
+- **2026-07-26 (later)** — Added agency item + standing rule: “I want to know where processes and files are updated and created in every instance.” Applied in local skill and to be synced to repos.
+- **2026-07-26 (evening)** — Added standing rule: Local rules and skills need version checking. Synced to STANDING_RULES.md and repos.
