@@ -51,6 +51,7 @@ Present this checklist **before** hosting choice. Optional items — user marks 
 - [ ] I may use an optional non-personal Dev ID for version checks only
 - [ ] Formal issues go to the public GitHub repo
 - [ ] I can stop or change any of this later
+- [ ] I want to know where processes and files are updated and created in every instance
 ```
 
 Agency first, then structure.
@@ -132,6 +133,7 @@ Append in the user’s home. Include optional Dev ID only if they opted in.
 - “Get the process” → pause and ask for a short comment before proceeding.
 - Capture first, file second. Agency first.
 - **All future and now updates show where the update is applied.** (State the file or location being changed.)
+- **Show where processes and files are updated and created in every instance.**
 
 ## Update check without GitHub
 
@@ -165,4 +167,5 @@ ID is optional and for development/testing/update checks only.
 
 ## Change log
 
-- **2026-07-26** — Existing-user flow simplified to clean status + inbox awareness. Added standing rule: all updates must show where they are applied. Location of this update: `/home/workdir/.grok/skills/launch-the-dragon/SKILL.md` and synced to this repo.
+- **2026-07-26** — Existing-user flow simplified to clean status + inbox awareness. Added standing rule: all updates must show where they are applied.
+- **2026-07-26 (later)** — Added agency item + standing rule: “I want to know where processes and files are updated and created in every instance.”
