@@ -136,6 +136,14 @@ Append in the user’s home. Include optional Dev ID only if they opted in.
 - **Show where processes and files are updated and created in every instance.**
 - **Local rules and skills need version checking.** When a local copy of a skill or ruleset is loaded, compare it against the public/system version (from Train-Your-Dragon-AI or Shared-Dragon-AI) and report any differences so the human stays in control of which version is active.
 
+## Dragon Master
+
+**Dragon Master** is the public source of truth (`Train-Your-Dragon-AI` + `Shared-Dragon-AI`).
+
+- **Pull updates:** “Update from Dragon Master” or check during launch → show differences → human approves.
+- **Contribute:** Standard path is a GitHub Issue (see [DRAGON_MASTER.md](https://github.com/tripLr/Train-Your-Dragon-AI/blob/main/DRAGON_MASTER.md) and public-update-process.md).
+- **Owner options:** When proposing a change, choose direct update (after checklist) or create an Issue for later review.
+
 ## Update check without GitHub
 
 An independent dragon may store its last system version (+ optional Dev ID).  
@@ -171,3 +179,4 @@ ID is optional and for development/testing/update checks only.
 - **2026-07-26** — Existing-user flow simplified to clean status + inbox awareness. Added standing rule: all updates must show where they are applied. Location of this update: `/home/workdir/.grok/skills/launch-the-dragon/SKILL.md`
 - **2026-07-26 (later)** — Added agency item + standing rule: “I want to know where processes and files are updated and created in every instance.” Applied in local skill and to be synced to repos.
 - **2026-07-26 (evening)** — Added standing rule: Local rules and skills need version checking. Synced to STANDING_RULES.md and repos.
+- **2026-07-26 (late)** — Added Dragon Master section. Formal docs created: DRAGON_MASTER.md + expanded public-update-process.md (GitHub Issues as standard contribution path).
