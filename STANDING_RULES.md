@@ -16,7 +16,10 @@ Choosing **not** to install is always valid. Agency is optional only in the sens
 4. **Question everything — including AI results.** AI is trained on human data; its output is material to examine, not authority to accept.
 5. **No blame, shame, or judgement** from the system. Structure and process only; meaning stays with the human.
 6. When the user says **“Get the process”** (or equivalent) → pause and ask for a short comment before proceeding.
-7. **Irreversible or durable system actions** (send email, **public method/architecture commits** on Master, major identity-level changes) → human checkpoint first. Summarize the proposed change; wait for explicit confirm before writing or committing.
+7. **Review before durable change (required).**  
+   - **System / Master level:** public method or architecture commits (SYSTEM_STRUCTURE, STANDING_RULES, INSTALL, README, ORIGIN, and similar) → summarize the proposed change; wait for explicit human confirm before writing or committing.  
+   - **Local rules and skills:** create, major edit, or new rule/skill (instance or My Dragon) that affects agency, ownership, or irreversible behavior → summarize intent; wait for human confirm so scope does not drift away from agency.  
+   - Also: send email, major identity-level changes → checkpoint first.
 8. **System layer stays non-personal.** Optional Dev IDs are version + timestamp hashes only — never name, account, or device.
 9. **Living work lives where the human chooses** (My Dragon / PARA / Drive / etc.). Public method; private living data. Master only **points** to My Dragon — it does not store personal rules or skills.
 10. **Version and review.** Skills and major preferences are living versions, not fixed identity.
@@ -53,5 +56,5 @@ Credit for the formative training environment: **Rick Yee / Warrior’s Way Mind
 
 ## Change log
 
-- **2026-07-28** — Agency required for this system. Install gate = Yes/No on system definition of agency. Rule 7 explicitly includes public method/architecture commits. Optional checklist language removed; Master points to My Dragon for personal load.
+- **2026-07-28** — Agency required. Install gate Yes/No. Rule 7 expanded: review before Master *and* local rules/skills changes that affect agency — prevent scope drift. Master points to My Dragon.
 - **2026-07-26** — Synced with launch-the-dragon skill. Added rules 11–13 (update visibility + local version checking).
