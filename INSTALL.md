@@ -4,11 +4,11 @@
 
 ---
 
-## 1. Read the stance (optional but recommended)
+## 1. Read the stance (recommended)
 
 - Open this repo’s [README](README.md)
-- Skim “Why this project exists” and [STANDING_RULES.md](STANDING_RULES.md)
-- Decide you want ownership and agency kept with you
+- Skim [STANDING_RULES.md](STANDING_RULES.md)
+- Decide whether you want ownership and agency kept with you under this method
 
 ## 2. Connect storage (only what you want)
 
@@ -27,11 +27,11 @@ I am starting fresh. Please treat me as a new user.
 Show me which connectors I have available.
 If I need any, point me to https://grok.com/connectors.
 
-Before I choose hosting, walk me through:
-**Your agency selections begin training your dragon!**
+Before I choose hosting, walk me through agency:
+**This is what the system sees as agency** — then Yes or No.
 
-Then help me choose where my living notes will live
-(Google Drive is fine if I have it; GitHub full or Hybrid also ok).
+If Yes, help me choose where my living notes will live
+(My Dragon / Google Drive PARA is fine if I have it; GitHub or Hybrid also ok).
 
 I want my own independent setup — not shared with anyone else's.
 Keep ownership with me. You are the builder and thinking partner.
@@ -40,46 +40,51 @@ When ready, create a simple first log entry in my chosen place
 and confirm we are oriented.
 ```
 
-## 5. Your agency selections begin training your dragon!
+## 5. This is what the system sees as agency
 
-Complete before choosing hosting:
+- You keep ownership of your living files (My Dragon / PARA).
+- You decide where notes and course work live.
+- AI output is material to question, not final truth.
+- Pause before irreversible actions and before public method/architecture changes on Master.
+- Prefer durable systems over relying on chat history.
+- Formal issues go to the public GitHub repo.
+- You can stop or change any of this later.
+- Processes and file updates are shown where they happen.
 
-```markdown
-## Your agency selections begin training your dragon!
+**Agree to run this system under that definition?**
 
-- [ ] I keep ownership of my living files
-- [ ] I decide where notes and course work live
-- [ ] I treat AI output as material to question, not final truth
-- [ ] I want a pause before irreversible actions
-- [ ] I prefer durable systems over relying on chat history
-- [ ] I may use an optional non-personal Dev ID for version checks only
-- [ ] Formal issues go to the public GitHub repo
-- [ ] I can stop or change any of this later
-```
+- **Yes** → continue install (connectors → My Dragon home → orient)
+- **No** → stop here; use a normal chat or read the public repo without installing this method
 
-## 6. Choose hosting when asked
+### Explanation of agency (if needed)
+
+**Agency here means:** you own the living work and the final say. The AI drafts, builds, and organizes; it does not own your files or decide what is true for you. Checkpoints exist before irreversible actions (for example sending email or changing public method docs on Master). AI output is material to examine — it is trained on human data, not authority. Living notes stay in *your* My Dragon (PARA or the home you choose). The public Master repo only holds shared method and **points** at My Dragon; it does not store your personal rules or skills.
+
+If that is not what you want, choose **No**. There is no pressure to install.
+
+## 6. Choose hosting (only after Yes)
 
 - A. GitHub full
-- B. Drive / cloud PARA
+- B. Drive / cloud PARA (My Dragon home)
 - C. Hybrid (recommended if you have both)
 - D. Other
 
 ## 7. Optional Dev ID
 
-Only if you want version/update checks. Contains no personal data.
+Only if you want version/update checks. Contains no personal data (version + timestamp hash only).
 
 ## 8. Confirm oriented
 
 - One log entry in *your* place
-- You know where living work lives
+- You know where My Dragon / living work lives
 - You can stop or change anything later
 
 ---
 
 **Order that matters**
 
-Read stance → connectors → Launch the dragon → **agency selections** → hosting choice → optional ID → confirm.
+Read stance → connectors → Launch the dragon → **agency (Yes/No)** → hosting choice → optional ID → confirm.
 
-Do not create folders or logs before the agency selections and hosting choice.  
+Do not create folders or logs before agency Yes and hosting choice.  
 Do not treat AI output as final truth.  
 Ownership stays with you the whole way.
