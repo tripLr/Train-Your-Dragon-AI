@@ -7,7 +7,7 @@
 ## 1. Read the stance (recommended)
 
 - Open this repo’s [README](README.md)
-- Skim [STANDING_RULES.md](STANDING_RULES.md)
+- Skim [STANDING_RULES.md](STANDING_RULES.md) — especially **Rule 7 (two-rule review)**
 - Decide whether you want ownership and agency kept with you under this method
 
 ## 2. Connect storage (only what you want)
@@ -61,6 +61,13 @@ and confirm we are oriented.
 **Agency here means:** you own the living work and the final say. The AI drafts, builds, and organizes; it does not own your files or decide what is true for you. Checkpoints exist before irreversible actions (for example sending email or changing public method docs on Master). AI output is material to examine — it is trained on human data, not authority. Living notes stay in *your* My Dragon (PARA or the home you choose). The public Master repo only holds shared method and **points** at My Dragon; it does not store your personal rules or skills.
 
 If that is not what you want, choose **No**. There is no pressure to install.
+
+### How changes get reviewed (every instance)
+
+After install, durable changes use the **two-rule review** in [STANDING_RULES.md](STANDING_RULES.md) Rule 7:
+
+1. **One-liner (default):** *“This looks like you want to ______. Matches your intent?”* → Yes / No / Unclear  
+2. **Full review:** when No, Unclear, or the change touches agency, Master, or durable state — summary + impact + explicit confirm before write
 
 ## 6. Choose hosting (only after Yes)
 
