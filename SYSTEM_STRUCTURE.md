@@ -1,6 +1,6 @@
 # System Structure — Why Agency Needs Organization
 
-**Updated:** 2026-07-26  
+**Updated:** 2026-07-28  
 **Audience:** Anyone training their own dragon, including people who are new to formal development processes.
 
 ---
@@ -17,17 +17,33 @@ That is why organization matters.
 
 ---
 
-## Core Split (do not blur) — 2026-07-26 evolution
+## Three-layer architecture (do not blur) — privacy & agency
+
+| Layer | Home | What lives there |
+|-------|------|------------------|
+| **Master / public Dragon** | GitHub `Train-Your-Dragon-AI` | Method only: bootloader, public skills, standing rules, install, versioning, pointers. **No personal rules, no personal skills content, no living notes.** |
+| **My Dragon** | User’s **PARA** (e.g. Google Drive) | The personal dragon concept: personal rules, personal skills, memory orientation, course living files, research, journal, faith, discoveries. **Owned by the human.** |
+| **Capture** | Dragon-Inbox (Drive root or equivalent) | Staging: phone / chat → review → file into My Dragon / PARA |
+
+### Hard rules
+
+1. **My Dragon concept lives in the PARA architecture** — not in the public repo and not as AI-owned storage.
+2. **Personal rules and personal skills live under My Dragon** (PARA). They are the user’s, versioned under the user’s control.
+3. **Master / public Dragon only points** to the idea of My Dragon. It never stores another user’s personal rules or skills. Processes say: *load from the user’s My Dragon / PARA* — they do not embed that content.
+
+This ensures **privacy** and **agency**. Shared method; private living dragon.
+
+---
+
+## Core Split (operational) — 2026-07-26 / refined 2026-07-28
 
 | Layer | Home | Role |
 |-------|------|------|
-| **Dragon project (the system itself)** | **GitHub** | Bootloader, skills, rules, official course skeleton, versioning, future web-launchable process |
-| **Living personal work** | **PARA on Google Drive** | All projects in progress, notes, research, study, journal, discoveries, faith work, equipment, etc. |
-| **Capture** | **Dragon-Inbox** (Drive root) | Phone → AI staging point; material is reviewed and filed into PARA |
+| **Dragon project (the system itself)** | **GitHub** | Bootloader, *public* skills, rules, versioning, future web-launchable process |
+| **My Dragon (living personal system)** | **PARA on Google Drive** (or user’s chosen private home) | Personal rules, personal skills, memory, all projects in progress, notes, research, study, journal, discoveries, faith work, equipment, course weeks |
+| **Capture** | **Dragon-Inbox** | Phone → AI staging; material is reviewed and filed into My Dragon / PARA |
 
-**Privacy & ownership rule:** Data lives in the user’s PARA. It is not controlled by any AI system.
-
-This split was clarified on 2026-07-26 after the bootloader and skills had temporarily treated private GitHub as the home for living personal notes. That was corrected. The Dragon *system* stays on GitHub for versioning and future public launch. Everything the human is actually working on lives in PARA under the human’s ownership.
+**Privacy & ownership rule:** Personal data and personal rules live in the user’s My Dragon (PARA). They are not controlled by any AI system and are not copied into the public Master repo.
 
 ---
 
@@ -37,36 +53,26 @@ Agency means you remain the one who decides.
 
 Without a clear place for things to land, three problems appear quickly:
 
-1. **Capture fails** — useful material arrives (phone photos, screenshots, notes, course files) and has nowhere obvious to go. It piles up or disappears.
-2. **Context resets** — every new conversation starts from near zero. Progress does not compound.
+1. **Capture fails** — useful material arrives and has nowhere obvious to go.
+2. **Context resets** — every new conversation starts from near zero.
 3. **Ownership blurs** — the AI begins to feel like the center of the work instead of a tool under your direction.
 
-A streamlined organization method solves these by giving every piece of work a home based on *what it is doing right now*, not on abstract categories.
-
-You do not need to become a process expert. You only need a method that is:
-
-- Simple enough to use when tired
-- Clear enough that any AI instance can follow it
-- Durable enough that progress survives across days and devices
+A streamlined organization method solves these by giving every piece of work a home based on *what it is doing right now*.
 
 ---
 
 ## How PARA entered this system
 
-PARA (Projects, Areas, Resources, Archives) was not invented here.
-
-It was suggested after a general look at existing organization methods that already solve the same problems many people hit when working with information and long-term projects. The goal was not to reinvent the wheel.
-
-PARA was chosen because it matches how work actually moves:
+PARA (Projects, Areas, Resources, Archives) was not invented here. It was chosen because it matches how work moves:
 
 | Layer | Meaning in this system |
 |-------|------------------------|
-| **Projects** | Active efforts with a finish line (a course week, an equipment repair, a specific research question) |
-| **Areas** | Ongoing responsibilities with no end date (Mind, Heart, Body, Spirit, health, marriage, work skills) |
-| **Resources** | Reference material that supports projects and areas |
-| **Archives** | Finished or inactive material kept for history, not daily use |
+| **Projects** | Active efforts with a finish line |
+| **Areas** | Ongoing responsibilities (Mind, Heart, Body, Spirit, health, marriage, work) |
+| **Resources** | Reference material |
+| **Archives** | Finished or inactive material |
 
-This keeps personal life and study material from becoming a dump. Everything has a home based on activity and responsibility.
+**My Dragon** sits inside that PARA tree as the home for the personal AI operating layer (rules, skills, orientation) plus the living work those rules serve.
 
 ---
 
@@ -74,14 +80,12 @@ This keeps personal life and study material from becoming a dump. Everything has
 
 | Kind of work | Where it lives | Examples |
 |--------------|----------------|----------|
-| **Personal** | Your PARA (Google Drive) | Course notes, self-reflection, diet, equipment projects, journal, research, discoveries |
-| **Method / capability** | Public Train-Your-Dragon-AI repo | Capture workflows, bootloader, process review, filing rules, cross-instance continuity, Dragon Curator |
+| **Personal (My Dragon)** | Your PARA | Personal rules, personal skills, course notes, self-reflection, journal, research, discoveries |
+| **Method / capability (Master)** | Public Train-Your-Dragon-AI | Capture workflows, bootloader, public skill *templates*, process review, “point to user’s My Dragon” instructions |
 
-Personal work stays private and organized by PARA.
+Personal work stays private under My Dragon.
 
-When the work is about *how human and AI work together more efficiently*, it is method. Method belongs in the public project and in the standing development rules so future sessions (and other people) can inherit it.
-
-This distinction protects agency. Personal material stays yours. System improvements become shared capability without mixing the two.
+When the work is about *how human and AI work together*, it is method. Method belongs in the public Master and **points** at My Dragon for anything personal — it does not contain it.
 
 ---
 
@@ -89,58 +93,49 @@ This distinction protects agency. Personal material stays yours. System improvem
 
 ```
 You (agency)
-├── Personal work → PARA (Projects / Areas / Resources / Archives)
-│     └── Living material in Google Drive
+├── My Dragon → PARA (Projects / Areas / Resources / Archives)
+│     ├── Personal rules & personal skills
+│     └── Living material (course, notes, research, …)
 │
-└── Method / capability work → Public Train-Your-Dragon-AI (GitHub)
-      └── Rules, bootloader, capture, process review, skills
+└── Master Dragon → Public Train-Your-Dragon-AI (GitHub)
+      └── Rules, bootloader, public skills — all of which *point to* My Dragon for personal load
 ```
 
-**Dragon-Inbox** is the capture point for personal material (phone → AI review → correct home in PARA).
+**Dragon-Inbox** is the capture point for personal material.
 
-**Bootloader** (`launch-the-dragon`) lets any instance load the current rules and the Core Split.  
-Saying **“Bootload update”** or **“Launch the Dragon”** re-orients an already-running session.
+**Bootloader** (`launch-the-dragon`) orients any instance to Master method, then loads **from the user’s My Dragon** (connectors / PARA), never the other way around.
 
 ---
 
 ## Development focus rule (standing)
 
-When work improves how the collaboration itself runs (efficiency, continuity, capture, filing, clarity), treat it as **method**.
+When work improves how the collaboration itself runs:
 
-1. Record it in the public Train-Your-Dragon-AI project.
-2. Update the standing development rules so future instances inherit it.
-3. Keep personal content in PARA.
-
-This prevents the system from improving in private while the public method stays frozen, and it prevents personal material from being mixed into public method docs.
+1. Record **method** in the public Master repo (pointers only for personal paths).
+2. Keep **personal** rules, skills, and content in My Dragon (PARA).
+3. Never promote personal content into Master “for convenience.”
 
 ---
 
 ## Starting point for people who know little about formal process
 
-You do not need prior knowledge of project management or knowledge systems.
-
-You only need to practice three habits:
-
-1. **Capture first** — put material in a known inbox instead of leaving it scattered.
-2. **File second** — give it a home based on whether it is active, ongoing, reference, or finished.
-3. **Review on friction** — when something feels stuck, improve the smallest useful piece of the system.
-
-The rest of the structure exists to support those habits under human ownership.
+1. **Capture first** — known inbox.
+2. **File second** — home in My Dragon / PARA.
+3. **Review on friction** — smallest useful improvement.
 
 ---
 
 ## Why this matters for agency
 
-Without organization, the AI becomes the only place that “knows” what is going on. That slowly transfers ownership.
+Without this split, the public system either absorbs personal data or the personal system has no portable method.
 
-With a clear structure:
+With it:
 
 - You decide what is kept and where it lives
-- Progress compounds across days and devices
-- Any instance can be oriented quickly
-- Personal material and public method stay cleanly separated
+- Master stays shareable and clean
+- My Dragon stays private and under your control
+- Any instance can be oriented to Master, then pointed at *your* My Dragon
 
-Agency is not protected by more features.  
-It is protected by a simple, durable way of knowing where things belong and who is in charge of them.
+Agency is protected by a simple, durable way of knowing where things belong and who is in charge of them.
 
-That is the practical reason Train Your Dragon uses a streamlined organization method.
+**Updated 2026-07-28:** Explicit three-layer rule — My Dragon in PARA; personal rules/skills under My Dragon; Master only points to My Dragon.
