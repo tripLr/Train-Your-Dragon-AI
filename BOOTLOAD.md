@@ -1,6 +1,6 @@
 # BOOTLOAD — Train Your Dragon
 
-**Updated:** 2026-07-30
+**Updated:** 2026-07-31
 
 ## Purpose
 
@@ -38,6 +38,14 @@ It is **not** a dump of all projects or course weeks. Those stay in PARA (or the
 | Private memory / history patterns | User’s private memory / My-Dragon-AI style home |
 
 **Deprecated for living study:** course trees such as `nosce-te-ipsum` on GitHub may remain as frozen skeletons. Living work does not return there. This public repo may keep a short reference that living work switched to PARA.
+
+## PARA Layer Status Rules
+
+- Each active Project or Area should have a `status-index.md` file.
+- A `status-index.md` contains a timestamped top-level summary + timestamped entries.
+- When entering a layer that is missing its `status-index.md`, suggest a quick review and create or update as needed.
+- Skills and new instances look for the file first → then the top-level summary → then individual entries.
+- Archive is low priority. Resources usually need no status file unless repeatedly useful.
 
 ## Pointers
 
