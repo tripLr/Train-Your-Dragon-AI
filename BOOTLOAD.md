@@ -1,50 +1,64 @@
-# BOOTLOAD — Train Your Dragon (Public Orientation)
+# BOOTLOAD — Train Your Dragon
 
-**For any new Grok instance or cold start.**  
-Read this first (or the private version if you have access to My-Dragon-AI), then say **“Launch the dragon”** (or load the `launch-the-dragon` skill).
+**Updated:** 2026-07-30
 
----
+## Purpose
 
-## Where everything lives (three-repo model)
+Give every instance a single, human-owned orientation file so the AI can be trained *about this person* without treating chat history as the source of truth.
+
+## Commands
+
+| Command | When |
+|---------|------|
+| **Launch the dragon** | **Once** (or rebuild). Ends with **make-bootloader**. |
+| **Load bootloader** | Every later session (or on demand). Reads the orientation file. |
+
+## make-bootloader (end of first launch)
+
+1. Create `bootload-dragon.md` in the user’s chosen living home (example: Google Drive `Projects/bootload-dragon.md`).
+2. Seed only what the human has stated: Dragon exists; living work location (e.g. PARA on Drive); main focuses; methods; areas of responsibility.
+3. Add a **pointer** in durable memory: Load bootloader → that file.
+4. Optional log line: created / rebuilt.
+
+After make-bootloader succeeds, ongoing sessions use **Load bootloader**, not full Launch.
+
+## Living orientation file
+
+The bootloader file is the **instance source of truth about the human**.  
+Update it only with **human confirm** when structural facts change.
+
+It is **not** a dump of all projects or course weeks. Those stay in PARA (or the user’s chosen living home).
+
+## Where everything lives
 
 | What | Where |
 |------|--------|
-| Public principles, skills, ORIGIN, FUTURE | **Train-Your-Dragon-AI** (this repo) |
-| Private core (memory, history, personal-notes, current operational context) | **My-Dragon-AI** (private — your own copy) |
-| Shareable / portable skills | **Shared-Dragon-AI** |
+| Public method, skills, install, standing rules | **Train-Your-Dragon-AI** (this repo) |
+| Living notes, course, research, personal development | **User PARA** (e.g. Google Drive) |
+| Private memory / history patterns | User’s private memory / My-Dragon-AI style home |
 
----
+**Deprecated for living study:** course trees such as `nosce-te-ipsum` on GitHub may remain as frozen skeletons. Living work does not return there. This public repo may keep a short reference that living work switched to PARA.
 
-## Intent of this work
+## Pointers
 
-Build a durable, human-owned AI collaboration system.
+Pointers answer “where is X?” only.  
+Do not copy full project content into memory.
 
-Goals:
-- Keep ownership with the human
-- Turn conversations and research into private, retrievable knowledge
-- Train both human and AI toward clearer, more efficient collaboration
-- Support personal growth, self-knowledge, and day-to-day assistance under human agency
+## Critical standing rules
 
----
-
-## Critical standing rules (load these)
-
-1. **Human owns the system.** AI is builder and thinking partner.
-2. **Collaboration & clarity protocol (BETA):** When a request is vague or admits multiple interpretations — especially before significant actions — pause: reflect what was heard → name the unclarity → restate understood meaning → offer a couple of concrete suggestions. Deeper collaboration is the default.
-3. Prefer durable external systems over chat history.
-4. **Review triggers:** ~6 months, when asked, or model upgrade.
-5. When the human says **“Get the process”** → pause and ask for a short comment before proceeding.
-
----
+1. Human owns the system. AI is builder and thinking partner.
+2. Prefer durable external systems over chat history.
+3. When the human says **“Get the process”** → pause and ask for a short comment before proceeding.
+4. Agency first; confirm before structural or irreversible writes.
 
 ## How to continue
 
-1. Read this file (or the private BOOTLOAD if available).
-2. Say **“Launch the dragon”**.
-3. Confirm the session is aligned.
-4. Proceed with the work at hand.
+**New:** Say **Launch the dragon** → finish with make-bootloader.  
+**Existing:** Say **Load bootloader** → read orientation → continue work.
 
----
+## Related
 
-*Public orientation file. Generated / updated 2026-07-23 after successful live bootloader test.*
-*Private operational context (current week, specific pointers) lives in My-Dragon-AI.*
+- [INSTALL.md](INSTALL.md)
+- [STANDING_RULES.md](STANDING_RULES.md)
+- [launch-the-dragon.md](launch-the-dragon.md)
+- [SYSTEM_STRUCTURE.md](SYSTEM_STRUCTURE.md)
