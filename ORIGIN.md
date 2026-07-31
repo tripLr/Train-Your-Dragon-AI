@@ -27,6 +27,12 @@ This file is a permanent public record of how the core versioning principle in t
 - **26 July 2026** — Core Split evolution (privacy & ownership).  
   Clarified and enforced: the Dragon *project/system* lives on GitHub (versioned, future web-launchable). All projects in progress and all relevant notes/research live in the user’s PARA. Data ownership and privacy stay with the human, not under AI-system control. Bootloader and personal-notes skill updated to stop treating private GitHub as the home for living personal data. Direction set for **Dragon Curator** skill (any thread / any source → PARA routing). Recorded as a perfect evolution of Train Your Dragon.
 
+- **31 July 2026** — Lean Memory + PARA Status-Index (Version 1 Bootloader test).  
+  Major bloat reduction of the durable memory file. Global memory was reduced to high-signal orientation only (Bootloader first, Memory Edit Process, Working Style & Protocols, minimal High-level Identity). Detailed history, versioned self-reflection, and long identity blocks were moved into PARA.  
+  New pattern introduced: each active Project or Area owns a `status-index.md` (timestamped top-level summary + timestamped entries). Skills and new instances look for the file → summary → entries. When a layer is missing its status-index, the system suggests a review and create/update.  
+  Bootloader updated to Version 1 (test) with explicit PARA Layer Status Rules. Warriors Way received the first live `status-index.md` (replacing the previous Course Checklist).  
+  Result: clean orientation chain — Lean Memory → Bootloader → PARA layers → each layer owns its own status. Global memory stays lean; living detail stays discoverable under human ownership.
+
 ## Why versioning is required
 
 Through a deep examination of information theory and repeated observation of AI systems, the author concluded that an AI interaction is only as good as the information it is given.  
