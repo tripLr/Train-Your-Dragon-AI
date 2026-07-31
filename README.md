@@ -100,10 +100,15 @@ Human ownership. Human curation. Public method. Private living work. Question ev
 This is what is running today:
 
 - Human ownership is the non-negotiable foundation.
-- The **structured memory file** is the core durable system.
+- **Lean global memory** holds only high-signal orientation (Bootloader first, Memory Edit Process, Working Style & Protocols, minimal identity). Detailed history and living detail live in PARA.
+- The **Bootloader** is the single instance entry point. It points to the PARA system.
+- **PARA layers** (Projects, Areas, Resources, Archive) each own their own status via `status-index.md` (timestamped top-level summary + timestamped entries). Skills look for the file → summary → entries. Missing status-index triggers a suggested review.
 - Skills and private conversation archives serve and extend that core.
 - Deliberate versioning and periodic review are built in.
 - The AI is a builder and thinking partner — the human trains the dragon.
+
+**Orientation chain (31 July 2026):**  
+Lean Memory → Bootloader → PARA layers → each layer owns its own status-index.
 
 ## Repository Structure (Three-Repo Model)
 
