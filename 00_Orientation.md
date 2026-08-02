@@ -29,6 +29,22 @@ This repository teaches the pattern; it does not override the user’s own bootl
 Downstream or secondary restatements of Agency / Consent are deprecated as independent sources of authority.  
 **Why:** Multiple independent copies create drift and competing authority. One clear source keeps the system trustworthy.
 
+## General development rule
+
+Structural files, methods, and orientation systems are developed using:
+
+1. Draft  
+2. Analysis  
+3. Consent  
+4. Update  
+5. Rollout (dependent orientation files + deprecation of competing authority where needed)  
+6. GitHub push (when the change belongs to the public/developed method)
+
+Even small updates may require a whole rollout.  
+Do not treat a structural change as local-only unless explicitly scoped that way.
+
+This is a general development rule for projects using this method.
+
 ## How to use this method
 
 1. Keep your living documents in your own storage (any cloud or local system you control).
@@ -36,6 +52,7 @@ Downstream or secondary restatements of Agency / Consent are deprecated as indep
 3. Maintain a short bootloader that defines Agency and Consent as standing rules and points any AI instance to your living system.
 4. Keep AI skills (including global reminders) in one skills home.
 5. Require explicit consent before structural writes.
+6. Treat structural changes as potentially requiring full rollout.
 
 ## Consent rule (pattern)
 Do not treat this repository as a place to store or process another person’s private living data.  
