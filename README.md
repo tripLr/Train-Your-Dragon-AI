@@ -20,10 +20,23 @@ It solves a simple problem: AI conversations are powerful but ephemeral. Insight
 |-------|------|
 | **PARA** | Organizational spine (Projects / Areas / Resources / Archives) |
 | **MOC** | Single orientation file (`00_Orientation.md`) per multi-layer project — source of truth + handling rules |
-| **Bootloader** | Short, stable file that tells any AI instance how to find the living system |
+| **Bootloader** | Short, stable file that tells any AI instance how to find the living system. **Agency** and **Consent** are defined here as standing rules. |
+| **Skills** | All AI skills live in one skills home (e.g. `dragon-skills/`), including global reminders |
 | **Consent rule** | Nothing structural is written without explicit user approval |
 
 The same pattern works with any storage the user controls: cloud, local device, or networked storage. A simple bootloader command is enough for the AI to know who the user is and where the living work lives.
+
+## Standing rules (authoritative in the bootloader)
+
+**Agency**  
+The human owns the data, the decisions, and the direction.  
+AI is builder and thinking partner, not owner.
+
+**Consent**  
+Do not create, overwrite, or structurally edit orientation files, living documents, skills, reminders, or other system files without explicit user approval.  
+Propose and wait.
+
+Downstream files may echo these rules for clarity but must not redefine or soften them. Multiple independent copies create drift and competing authority.
 
 ## Credits
 
@@ -47,9 +60,10 @@ See `ORIGIN.md` for the full discovery process and philosophy.
 ## Quick start for an AI instance
 
 1. User says “Load bootloader” (or equivalent).
-2. Read the bootloader file from the user’s living storage.
+2. Read the bootloader file from the user’s living storage — Agency and Consent are defined there.
 3. Follow the orientation file of the relevant project.
-4. Obey the consent rule before any structural write.
+4. Skills and reminders live in the skills home (e.g. `dragon-skills/`).
+5. Obey the consent rule before any structural write.
 
 ## License
 

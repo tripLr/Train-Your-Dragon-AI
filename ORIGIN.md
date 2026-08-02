@@ -32,7 +32,8 @@ This system is built so that:
 - The AI proposes, drafts, and organizes — then waits for consent.
 - Privacy stays with the human’s own storage (cloud or local).
 
-Agency is not a slogan. It is the operating rule.
+Agency is not a slogan. It is the operating rule.  
+In the running system it is defined as a standing rule in the bootloader, alongside Consent.
 
 ## Philosophy
 

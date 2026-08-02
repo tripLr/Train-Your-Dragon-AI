@@ -21,14 +21,23 @@ Living work stays in the user’s own storage (PARA).
 | LICENSE | MIT + clarification that user data is out of scope |
 | 00_Orientation.md | This file — map of the public method |
 
+## Standing rules
+
+**Authoritative Agency and Consent rules live in the user’s bootloader.**  
+This repository teaches the pattern; it does not override the user’s own bootloader.
+
+Downstream or secondary restatements of Agency / Consent are deprecated as independent sources of authority.  
+**Why:** Multiple independent copies create drift and competing authority. One clear source keeps the system trustworthy.
+
 ## How to use this method
 
 1. Keep your living documents in your own storage (any cloud or local system you control).
 2. Give each multi-layer project a single `00_Orientation.md`.
-3. Maintain a short bootloader that points any AI instance to your living system.
-4. Require explicit consent before structural writes.
+3. Maintain a short bootloader that defines Agency and Consent as standing rules and points any AI instance to your living system.
+4. Keep AI skills (including global reminders) in one skills home.
+5. Require explicit consent before structural writes.
 
-## Consent rule
+## Consent rule (pattern)
 Do not treat this repository as a place to store or process another person’s private living data.  
 The method is open; the user’s files remain the user’s.
 
