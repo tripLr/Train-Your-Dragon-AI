@@ -1,6 +1,10 @@
 MIT License
 
-Copyright (c) 2026 tripLr (Matt Rogers)
+Copyright (c) 2026 Matt Rogers (tripLr)
+
+This license covers the method, architecture documentation, and associated files 
+in this project. The user’s living data, personal files, and PARA content remain 
+solely under the user’s control and are outside the scope of this license.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -11,16 +15,6 @@ furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
-
-ADDITIONAL PERMANENT REQUIREMENT:
-
-Any use, modification, distribution, or derivative work that includes any part
-of the versioning approach, memory-skill structure, public-update-process, or
-related methods from this repository MUST permanently retain the file
-ORIGIN.md and clear credit to the original author (tripLr / Matt Rogers).
-
-This history file and the credit are not optional. They are a required part of
-the system.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,

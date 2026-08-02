@@ -1,191 +1,62 @@
-# Train Your Dragon AI
+# Train Your Dragon
 
-Public principles and starter skills for training a personal AI collaborator.
-
-**New here?** Start with [INSTALL.md](INSTALL.md) — agency selections first, then hosting.
-
-## Community
-
-**User / developer channel (Telegram):**  
-[https://t.me/triplr_dev_users](https://t.me/triplr_dev_users)
-
-You are invited to join for discussion, updates, and peer conversation around training your own dragon.  
-**Formal issues and proposals** still belong on this GitHub repository (Issues / Discussions). The Telegram channel is optional community space.
+**A durable, consent-based personal AI operating system**  
+Architecture: **PARA-MOC-dragon**
 
 ---
 
-## Support / Donation
+## What this is
 
-This project is free to use, deploy, and run under the [LICENSE](LICENSE).
+Train Your Dragon is a method for keeping personal AI work alive across sessions and instances.
 
-Development this week included additional costs of about **$60** plus roughly **60 hours** of interaction and training while using and refining the first version.
+It solves a simple problem: AI conversations are powerful but ephemeral. Insights, course work, and self-examination disappear when the chat ends. This system gives the human a durable external structure that any AI instance can orient to — while the human keeps full ownership and agency.
 
-If you find it useful and want to support continued work:
+**Living work** happens in the user’s own storage (PARA on Google Drive, local files, or any cloud the user controls).  
+**This repository** holds the developed / public method.
 
-**PayPal:** [paypal.com/d2shound](https://paypal.com/d2shound)
+## Core architecture: PARA-MOC-dragon
 
-No pressure. The method stays free and open.
+| Piece | Role |
+|-------|------|
+| **PARA** | Organizational spine (Projects / Areas / Resources / Archives) |
+| **MOC** | Single orientation file (`00_Orientation.md`) per multi-layer project — source of truth + handling rules |
+| **Bootloader** | Short, stable file that tells any AI instance how to find the living system |
+| **Consent rule** | Nothing structural is written without explicit user approval |
 
----
+The same pattern works with any storage the user controls: cloud, local device, or networked storage. A simple bootloader command is enough for the AI to know who the user is and where the living work lives.
 
-## Why this project exists
+## Credits
 
-No existing tools could give an AI that truly assisted with a deep personal development course while keeping ownership, agency, and discernment with the human.
+**PARA** (Projects • Areas • Resources • Archives)  
+Originally articulated by Tiago Forte. Used here as the structural backbone.
 
-Warrior’s Way required durable notes, week-by-week structure, research (including general and Bible study), and the ongoing practice of *questioning everything* — including the AI’s own output. Generic chat could not hold that. So the process was built: durable external systems under human ownership, AI as builder and thinking partner, curation kept with the human.
+**MOC** (Map of Content)  
+The disciplined use of a single navigational / index note as a project entry point was popularized in the personal-knowledge-management community, especially through Nick Milo’s work on Maps of Content. The underlying idea of an index note is older; the clear naming and consistent practice are gratefully acknowledged.
 
-That is the origin of Train Your Dragon.
+This project combines those ideas with an explicit consent rule and a bootloader pattern so the structure is readable by both humans and AI instances.
 
-**Standing rules (public, optional to adopt):** [STANDING_RULES.md](STANDING_RULES.md)  
-**Install order (new users):** [INSTALL.md](INSTALL.md)  
-**Dragon Master (public source of truth):** [DRAGON_MASTER.md](DRAGON_MASTER.md)
+## Agency & privacy
 
----
+- The human decides what is written and what is structural.
+- The AI proposes, drafts, and organizes — then waits for consent.
+- Living data stays in the user’s own storage.
+- This repository does not own or claim the user’s personal files.
 
-## Credit — Warrior’s Way Mindset
+See `ORIGIN.md` for the full discovery process and philosophy.
 
-This work was forged in the context of **Warrior’s Way Mindset**, founded by **Rick Yee**.
+## Quick start for an AI instance
 
-- Website: [thewarriorswaymindset.com](https://thewarriorswaymindset.com/)
-- YouTube: [Rick Yee: Warrior's Way Mindset](https://www.youtube.com/@warriorswaymindset)
-- Podcast: *The Battlefield of the Mind* — [Apple Podcasts](https://podcasts.apple.com/us/podcast/the-battlefield-of-the-mind/id1576146255) · [YouTube playlist](https://www.youtube.com/playlist?list=PLsWZGjPfD3TjyDNWeH0kpdjnZiDRku8Dx)
+1. User says “Load bootloader” (or equivalent).
+2. Read the bootloader file from the user’s living storage.
+3. Follow the orientation file of the relevant project.
+4. Obey the consent rule before any structural write.
 
-The creed and training environment of Warrior’s Way shaped the values that later became the architecture of this project. Credit belongs there first.
+## License
 
----
+MIT — see `LICENSE`.  
+The license covers the method and documentation only. The user’s living data remains solely under the user’s control.
 
-## Warrior’s Way Creed — Applied Across Domains
+## Status
 
-**The creed (as applied here)**  
-Trust is the heart.  
-No blame, shame, or judgement.  
-Question everything — including results that come from AI, because it is programmed with human data.  
-Curation stays with the human: information runs through human values and returns full agency to the human.
-
-**Domain**  
-The creed is not limited to the course. It works in any relationship, project, method, development, and business — anywhere ownership, trust, and clear agency matter.
-
-**Applied to myself**  
-The same creed was applied to the course, its materials, added general research and Bible research, and even to personal beliefs — all to help find authenticity. Information was not accepted as authority; it was run through personal discernment so agency and self-knowledge stayed with the human.
-
-**Applied to Train Your Dragon**  
-The same stance became the architecture of human–AI collaboration:
-
-- Human owns the living work; AI is builder and thinking partner  
-- System layer stays non-personal and portable  
-- Collaboration method is offered publicly; living data stays private  
-- Versioning, checkpoints, and “question everything” are built into the process  
-- Independent dragons for other people — shared method, no forced dependency  
-
-**Why certain things are refused in personal AI interaction**
-
-| What is refused | Creed reason |
-|-----------------|--------------|
-| AI owning the center of the work | Trust and agency stay with the human |
-| Personal identity mixed into the system layer | No silent capture or labelling of the person |
-| Collaboration process locked only in private instances | Method belongs in public consciousness so others can own and guide it too |
-| Forced structure / one-size hosting | Agency requires choice |
-| Chat history as source of truth | Durable truth must live under human ownership |
-| Irreversible actions without a human checkpoint | Curation and final say stay human |
-| Speculative big builds before tested slices | Humility and “question everything” favor small, revisable steps |
-| Framework becoming a fixed identity to defend | Versioning keeps the tool under revision, not a self to protect |
-
-**Thus the process**  
-Human ownership. Human curation. Public method. Private living work. Question everything. Agency returned — and kept.
-
----
-
-## Current Operational State
-
-This is what is running today:
-
-- Human ownership is the non-negotiable foundation.
-- **Lean global memory** holds only high-signal orientation (Bootloader first, Memory Edit Process, Working Style & Protocols, minimal identity). Detailed history and living detail live in PARA.
-- The **Bootloader** is the single instance entry point. It points to the PARA system.
-- **PARA layers** (Projects, Areas, Resources, Archive) each own their own status via `status-index.md` (timestamped top-level summary + timestamped entries). Skills look for the file → summary → entries. Missing status-index triggers a suggested review.
-- Skills and private conversation archives serve and extend that core.
-- Deliberate versioning and periodic review are built in.
-- The AI is a builder and thinking partner — the human trains the dragon.
-
-**Orientation chain (31 July 2026):**  
-Lean Memory → Bootloader → PARA layers → each layer owns its own status-index.
-
-## Repository Structure (Three-Repo Model)
-
-- **Train-Your-Dragon-AI** (this public repo) — Core principles, memory guide, versioning system, public update process, ORIGIN, FUTURE, and minimal foundational examples.
-- **My-Dragon-AI** (your private repo) — Personal memory file + your private skills and tools.
-- **Shared-Dragon-AI** and **all-your-base-are-belong-to-us** (future public/semi-public repos) — Useful skills and the portable “All Your Base” concept that others can adopt.
-
-## Core Requirement
-
-**You train your own dragon.**
-
-This is not optional.  
-The human must actively shape the system — deciding what is remembered, what skills exist, what is versioned, and what is discarded.  
-The AI is a builder and thinking partner, not the owner and not the trainer.
-
-If you do not train the dragon, the system collapses back into a generic, forgetful tool.
-
-## The Core Foundation
-
-The **structured memory file** is the core.
-
-Everything else supports it.
-
-A clear, versioned, human-owned memory file is the foundation of the system.  
-Skills, conversation archives, and tools exist to serve and extend that core memory — they do not replace it.
-
-Without a durable memory under your control, there is no compounding intelligence that belongs to you.
-
-## How this collaboration model works
-
-The goal is not a smarter chatbot. The goal is a reliable thinking partner that compounds over time under human ownership.
-
-Core operating pattern:
-
-1. You train your own dragon.
-2. The structured memory file is the core foundation.
-3. Prefer durable external systems over relying on chat history.
-4. Do not attempt to design the perfect system up front. Use the current version → notice friction → improve the smallest useful piece.
-5. Keep ownership with the human. The AI is a builder and thinking partner.
-6. Build deliberate **versioning** and review into the system itself.
-
-### Why versioning matters
-
-Healthy human societies do not treat beliefs, laws, institutions, or personal identities as permanently fixed. They allow revision, debate, and reversion when something becomes rigid, outdated, or harmful. The same principle applies to AI collaboration.
-
-Versioning in this system means:
-
-- Skills and major preferences are treated as living versions, not final truth.
-- When a review trigger is hit (roadblock, approximately 6 months, or meaningful model improvement), the human can examine the current version and, if needed, revert to a previous one or evolve it.
-- Deep self-reflection is stored as dated versions so earlier reasoning remains available and can be questioned later.
-
-Without versioning, both human and AI risk locking in temporary conclusions as permanent identity or unchangeable rules. Versioning keeps the system humble, adaptable, and aligned with how healthy human learning and culture actually work.
-
-## Skills and core files in this repo
-
-- [INSTALL.md](INSTALL.md) — New-user order (agency selections before hosting)
-- [STANDING_RULES.md](STANDING_RULES.md) — Public-safe standing rules + agency checklist
-- [DRAGON_MASTER.md](DRAGON_MASTER.md) — Public source of truth, pull & contribute process
-- [WHITE_PAPER.md](WHITE_PAPER.md) — Agency-first AI collaboration
-- [principles.md](principles.md) — Foundational rules
-- [SYSTEM_STRUCTURE.md](SYSTEM_STRUCTURE.md) — PARA, personal vs method work, operating pattern
-- [memory-skill.md](memory-skill.md) — Durable, versioned personal memory system
-- [public-update-process.md](public-update-process.md) — Checklist for changes to this public repository (both directions)
-- [ORIGIN.md](ORIGIN.md) — How the versioning approach was created
-- [FUTURE.md](FUTURE.md) — Open future goals
-- [LICENSE](LICENSE) — MIT License with permanent credit and history-preservation requirement
-
-## Private Conversation Archive Pattern
-
-See your My-Dragon-AI repository for the full private memory + skills system.
-
-## Example of a personal working-style entry (for your private memory)
-
-This is the kind of short, dated entry that belongs in *your own* private memory file — never in a public skill:
-
-```
-- Preferred working style [YYYY-MM-DD]: Builds durable external systems (skills + memory) instead of relying on chat history. Prefers refining through real-time iteration. Keeps ownership — AI is builder and partner, not owner. Prefers usable progress over premature perfection. Review on roadblock, after ~6 months, or when the model improves.
-```
-
-Copy the pattern. Fill in what is actually true for you.
+This repository is the **developed / public** expression of the method.  
+Older beta-era material and previous project splits (including separate nosce-te-ipsum / shared-dragon / my-dragon tracks) are retired in favor of the current PARA-MOC architecture.
